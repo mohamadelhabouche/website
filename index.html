@@ -1,541 +1,435 @@
-<!doctype html>
-<html lang="en" data-lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0d1f15" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F3F25">
+  <meta name="description" content="Caffettino — Premium coffee solutions. High-quality coffee products sourced from sustainable farms around the world.">
+  
+  <title>Caffettino — Premium Coffee Solutions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/Logo_no_background.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main" class="visually-hidden" style="position:absolute;left:-9999px;">Skip to content</a>
 
-    <title>Caffettino — Premium Coffee Solutions</title>
-    <meta
-      name="description"
-      content="Caffettino — Premium Coffee Solutions. Learn about our mission, products, contact info, business hours, and download the app on iOS and Android."
-    />
-
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-
-  <body>
-    <a class="skip" href="#main">
-      <span class="lang lang-en">Skip to content</span>
-      <span class="lang lang-ar" lang="ar">تخطي إلى المحتوى</span>
-    </a>
-
-    <header class="header">
-      <div class="container header__inner">
-        <a class="brand" href="#top" aria-label="Caffettino home">
-          <span class="brand__mark" aria-hidden="true">
-            <img
-              src="./assets/images/logo.png"
-              alt=""
-              width="34"
-              height="34"
-              loading="eager"
-              decoding="async"
-            />
-          </span>
-          <span class="brand__text">Caffettino</span>
-        </a>
-
-        <button
-          class="nav__toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          data-nav-toggle
-        >
-          <span aria-hidden="true"></span>
-        </button>
-
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button type="button" class="lang-toggle__btn" data-set-lang="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-toggle__btn" data-set-lang="ar" aria-pressed="false">AR</button>
-        </div>
-
-        <nav class="nav" data-nav>
-          <a href="#about">
-            <span class="lang lang-en">About</span>
-            <span class="lang lang-ar" lang="ar">من نحن</span>
+  <!-- ============================================
+       Header / Navigation
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="nav-pill" aria-label="Primary navigation">
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#location" class="nav-link">Location</a>
+          
+          <a href="#home" class="nav-logo" aria-label="Home">
+            <img src="./assets/Logo_no_background.png" alt="Caffettino">
           </a>
-          <a href="#how">
-            <span class="lang lang-en">How it works</span>
-            <span class="lang lang-ar" lang="ar">كيف يعمل</span>
-          </a>
-          <a href="#apps">
-            <span class="lang lang-en">Get the app</span>
-            <span class="lang lang-ar" lang="ar">حمّل التطبيق</span>
-          </a>
-          <a href="#support">
-            <span class="lang lang-en">Support</span>
-            <span class="lang lang-ar" lang="ar">الدعم</span>
-          </a>
+          
+          <a href="#about" class="nav-link">About</a>
+          <a href="#app" class="nav-link">App</a>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="eyebrow">
-              <span class="lang lang-en">Premium Coffee Solutions</span>
-              <span class="lang lang-ar" lang="ar">حلول قهوة مميزة</span>
+  <main id="main">
+    <!-- ============================================
+         Hero Section
+         ============================================ -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <img src="./assets/Logo_no_background.png" alt="Caffettino" class="hero__badge-logo">
+              Premium Coffee Solutions
+            </div>
+            
+            <h1 class="hero__title">Fall in Love with Coffee in Blissful Delight</h1>
+            
+            <p class="hero__subtitle">
+              Caffettino is dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual.
             </p>
-            <h1>
-              <span class="lang lang-en">Fall in love with coffee.</span>
-              <span class="lang lang-ar" lang="ar">عِش متعة القهوة بحبّ.</span>
-            </h1>
-            <p class="lead">
-              <span class="lang lang-en">
-                Caffettino is a premium coffee company dedicated to delivering
-                high-quality coffee products sourced from sustainable farms around
-                the world.
-              </span>
-              <span class="lang lang-ar" lang="ar">
-                كافيتّينو شركة قهوة مميّزة تلتزم بتقديم منتجات قهوة عالية الجودة
-                مصدرها مزارع مستدامة حول العالم.
-              </span>
-            </p>
-
-            <div class="cta">
-              <a class="btn btn--primary" href="#apps">
-                <span class="lang lang-en">Download</span>
-                <span class="lang lang-ar" lang="ar">تحميل</span>
-              </a>
-              <a class="btn btn--ghost" href="#about">
-                <span class="lang lang-en">About us</span>
-                <span class="lang lang-ar" lang="ar">من نحن</span>
-              </a>
-            </div>
-
-            <p class="note">
-              <span class="lang lang-en">Replace the store links once your listings are live.</span>
-              <span class="lang lang-ar" lang="ar">استبدل روابط المتاجر عندما يصبح التطبيق متاحًا.</span>
-            </p>
-          </div>
-
-          <div class="hero__card" aria-label="Product highlights">
-            <div class="stat">
-              <div class="stat__k">
-                <span class="lang lang-en">Coffee</span>
-                <span class="lang lang-ar" lang="ar">القهوة</span>
-              </div>
-              <div class="stat__v">
-                <span class="lang lang-en">Capsules & beans</span>
-                <span class="lang lang-ar" lang="ar">كبسولات وحبوب</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat__k">
-                <span class="lang lang-en">Machines</span>
-                <span class="lang lang-ar" lang="ar">الآلات</span>
-              </div>
-              <div class="stat__v">
-                <span class="lang lang-en">Professional</span>
-                <span class="lang lang-ar" lang="ar">احترافية</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat__k">
-                <span class="lang lang-en">Service</span>
-                <span class="lang lang-ar" lang="ar">الخدمات</span>
-              </div>
-              <div class="stat__v">
-                <span class="lang lang-en">Accessories & maintenance</span>
-                <span class="lang lang-ar" lang="ar">إكسسوارات وصيانة</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat__k">
-                <span class="lang lang-en">Blends</span>
-                <span class="lang lang-ar" lang="ar">الخلطات</span>
-              </div>
-              <div class="stat__v">
-                <span class="lang lang-en">Seasonal specials</span>
-                <span class="lang lang-ar" lang="ar">موسمية خاصة</span>
-              </div>
+            
+            <div class="hero__buttons">
+              <a href="#products" class="btn btn--primary">Explore Products</a>
+              <a href="#app" class="btn btn--outline">Get the App</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="about">
-        <div class="container">
-          <h2>
-            <span class="lang lang-en">About us</span>
-            <span class="lang lang-ar" lang="ar">من نحن</span>
-          </h2>
-          <p class="subhead">
-            <span class="lang lang-en">Premium coffee, ethical sourcing, and great service.</span>
-            <span class="lang lang-ar" lang="ar">حلول قهوة مميزة، مصادر أخلاقية، وخدمة ممتازة.</span>
-          </p>
+    <!-- Marquee between Home and Products -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+      </div>
+    </div>
 
-          <div class="lang lang-en">
-            <div class="accordion">
-              <details class="accordion__item" open>
-                <summary class="accordion__summary">Who We Are</summary>
-                <div class="accordion__content">
-                  <p>
-                    Caffettino is a premium coffee company dedicated to delivering
-                    high-quality coffee products sourced from sustainable farms
-                    around the world. We believe coffee is not just a drink — it’s a
-                    daily ritual.
-                  </p>
-                </div>
-              </details>
+    <!-- ============================================
+         Products Section
+         ============================================ -->
+    <section class="section section--alt" id="products">
+      <div class="container">
+        <div class="section__header text-center">
+          <span class="section__label">What We Offer</span>
+          <h2 class="section__title">Our Products</h2>
+          <p class="section__subtitle">Premium coffee products, straight from our app to your doorstep.</p>
+        </div>
+        
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be rendered by JavaScript from the list below -->
+        </div>
+      </div>
+    </section>
 
-              <details class="accordion__item">
-                <summary class="accordion__summary">Our Mission</summary>
-                <div class="accordion__content">
-                  <p>
-                    Our mission is to bring exceptional coffee experiences to homes
-                    and businesses while supporting ethical sourcing, fair trade
-                    practices, and environmental responsibility.
-                  </p>
-                </div>
-              </details>
+    <script>
+      // =============================================
+      // PRODUCT LIST - Update this array with your products
+      // =============================================
+      const products = [
+        {
+          image: "https://ik.imagekit.io/caffettino/macchinetta.png",
+          name: "Espresso Blend",
+          description: "A rich, bold espresso with notes of dark chocolate and caramel. Perfect for your morning ritual."
+        },
+        {
+          image: "https://via.placeholder.com/400x400?text=Product+2",
+          name: "Arabica Gold",
+          description: "Premium single-origin Arabica beans, medium roast with fruity and floral notes."
+        },
+        {
+          image: "https://via.placeholder.com/400x400?text=Product+3",
+          name: "Capsule Variety Pack",
+          description: "Try our best-selling capsules. Compatible with all major machines. 50 capsules included."
+        },
+        {
+          image: "https://via.placeholder.com/400x400?text=Product+4",
+          name: "Classic Macchinetta",
+          description: "Traditional Italian stovetop espresso maker. Brews 6 cups of authentic Italian coffee."
+        },
+        {
+          image: "https://via.placeholder.com/400x400?text=Product+5",
+          name: "Decaf Delight",
+          description: "All the flavor, none of the caffeine. Smooth, balanced, and perfect for evening enjoyment."
+        },
+        {
+          image: "https://via.placeholder.com/400x400?text=Product+6",
+          name: "Coffee Gift Set",
+          description: "The perfect gift for coffee lovers. Includes premium beans, a cup, and accessories."
+        }
+      ];
 
-              <details class="accordion__item">
-                <summary class="accordion__summary">What We Offer</summary>
-                <div class="accordion__content">
-                  <ul class="list">
-                    <li>Coffee capsules</li>
-                    <li>Ground and whole-bean coffee</li>
-                    <li>Professional coffee machines</li>
-                    <li>Accessories and maintenance services</li>
-                    <li>Special seasonal blends</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">Contact Information</summary>
-                <div class="accordion__content">
-                  <div class="contact">
-                    <div>
-                      <div class="contact__k">Address</div>
-                      <div class="contact__v">Cheikh Nadim El Jisr, Tripoli</div>
-                    </div>
-                    <div>
-                      <div class="contact__k">Phone</div>
-                      <div class="contact__v">+961 71 026 035</div>
-                    </div>
-                    <div>
-                      <div class="contact__k">Email</div>
-                      <div class="contact__v">
-                        <a href="mailto:support@caffettino.com">support@caffettino.com</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">Business Hours</summary>
-                <div class="accordion__content">
-                  <p class="pre">
-Monday – Friday: 08:30 – 18:30
-Saturday: 09:00 – 13:00
-Sunday & Holidays: Closed
-                  </p>
-                </div>
-              </details>
+      // Render products to the grid
+      function renderProducts() {
+        const grid = document.getElementById('products-grid');
+        grid.innerHTML = products.map((product, index) => `
+          <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
+            <div class="product-card__image-wrap">
+              <img src="${product.image}" alt="${product.name}" class="product-card__image">
             </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">${product.name}</h3>
+              <p class="product-card__desc">${product.description}</p>
+            </div>
+          </div>
+        `).join('');
+      }
 
-            <div class="cta" style="margin-top: 18px">
-              <a
-                class="btn btn--primary"
-                href="https://wa.me/96171026035?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20products."
-                target="_blank"
-                rel="noreferrer"
-              >
-                Chat with us on WhatsApp
+      // Initialize products immediately
+      renderProducts();
+    </script>
+
+    <!-- ============================================
+         Features / Why Caffettino
+         ============================================ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__header text-center">
+          <span class="section__label">Why Choose Us</span>
+          <h2 class="section__title">The Caffettino Difference</h2>
+          <p class="section__subtitle">We're committed to quality, sustainability, and exceptional service.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-item animate-on-scroll stagger-1">
+            <div class="feature-item__icon">🌱</div>
+            <h3 class="feature-item__title">Ethically Sourced</h3>
+            <p class="feature-item__desc">All our beans come from fair trade farms that prioritize environmental responsibility.</p>
+          </div>
+          
+          <div class="feature-item animate-on-scroll stagger-2">
+            <div class="feature-item__icon">🚀</div>
+            <h3 class="feature-item__title">Fast Delivery</h3>
+            <p class="feature-item__desc">Order through our app and receive your coffee within days, freshly packed just for you.</p>
+          </div>
+          
+          <div class="feature-item animate-on-scroll stagger-3">
+            <div class="feature-item__icon">💬</div>
+            <h3 class="feature-item__title">Dedicated Support</h3>
+            <p class="feature-item__desc">Questions? Our team is ready to help via WhatsApp, email, or phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Location & Contact Section
+         ============================================ -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section__header text-center">
+          <span class="section__label">Get in Touch</span>
+          <h2 class="section__title">Location & Contact</h2>
+          <p class="section__subtitle">Visit us or reach out anytime — we'd love to hear from you.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-card contact-card--info animate-on-scroll stagger-1">
+            <h3 class="contact-card__title">Contact Information</h3>
+            <div class="contact-card__content">
+              <strong>📍 Address</strong><br>
+              Cheikh Nadim El Jisr, Tripoli<br><br>
+              <strong>📞 Phone</strong><br>
+              +961 71 026 035<br><br>
+              <strong>✉️ Email</strong><br>
+              support@caffettino.com
+            </div>
+            <div class="contact-card__buttons">
+              <a href="mailto:support@caffettino.com" class="btn btn--primary">Email Us</a>
+              <a href="https://wa.me/96171026035?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn--whatsapp">
+                Chat on WhatsApp
               </a>
             </div>
           </div>
-
-          <div class="lang lang-ar" lang="ar">
-            <div class="accordion">
-              <details class="accordion__item" open>
-                <summary class="accordion__summary">من نحن</summary>
-                <div class="accordion__content">
-                  <p>
-                    كافيتّينو شركة قهوة مميّزة تلتزم بتقديم منتجات قهوة عالية الجودة
-                    مصدرها مزارع مستدامة حول العالم. نحن نؤمن بأن القهوة ليست مجرد مشروب — بل طقس يومي.
-                  </p>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">رسالتنا</summary>
-                <div class="accordion__content">
-                  <p>
-                    رسالتنا هي تقديم تجربة قهوة استثنائية للمنازل والأعمال مع دعم المصادر الأخلاقية
-                    والتجارة العادلة والمسؤولية البيئية.
-                  </p>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">ماذا نقدّم</summary>
-                <div class="accordion__content">
-                  <ul class="list">
-                    <li>كبسولات قهوة</li>
-                    <li>قهوة مطحونة وحبوب كاملة</li>
-                    <li>آلات قهوة احترافية</li>
-                    <li>إكسسوارات وخدمات صيانة</li>
-                    <li>خلطات موسمية خاصة</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">معلومات التواصل</summary>
-                <div class="accordion__content">
-                  <div class="contact">
-                    <div>
-                      <div class="contact__k">العنوان</div>
-                      <div class="contact__v">الشيخ نديم الجسر، طرابلس</div>
-                    </div>
-                    <div>
-                      <div class="contact__k">الهاتف</div>
-                      <div class="contact__v">+961 71 026 035</div>
-                    </div>
-                    <div>
-                      <div class="contact__k">البريد الإلكتروني</div>
-                      <div class="contact__v">
-                        <a href="mailto:support@caffettino.com">support@caffettino.com</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </details>
-
-              <details class="accordion__item">
-                <summary class="accordion__summary">ساعات العمل</summary>
-                <div class="accordion__content">
-                  <p class="pre">
-الاثنين – الجمعة: 08:30 – 18:30
-السبت: 09:00 – 13:00
-الأحد والعطل الرسمية: مغلق
-                  </p>
-                </div>
-              </details>
-            </div>
-
-            <div class="cta" style="margin-top: 18px">
-              <a
-                class="btn btn--primary"
-                href="https://wa.me/96171026035?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B2%D9%8A%D8%AF%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%AD%D9%88%D9%84%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85.%"
-                target="_blank"
-                rel="noreferrer"
-              >
-                تواصل معنا عبر واتساب
-              </a>
+          
+          <div class="contact-card contact-card--hours animate-on-scroll stagger-2">
+            <h3 class="contact-card__title">Business Hours</h3>
+            <div class="contact-card__content">
+              <strong>Monday – Friday</strong><br>
+              08:30 – 18:30<br><br>
+              <strong>Saturday</strong><br>
+              09:00 – 13:00<br><br>
+              <strong>Sunday & Holidays</strong><br>
+              Closed
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section section--alt" id="how">
-        <div class="container">
-          <h2>
-            <span class="lang lang-en">How it works</span>
-            <span class="lang lang-ar" lang="ar">كيف يعمل</span>
-          </h2>
+    <!-- Marquee between Location and About -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+      </div>
+    </div>
 
-          <div class="steps">
-            <div class="step">
-              <div class="step__n">1</div>
-              <div>
-                <h3>
-                  <span class="lang lang-en">Discover</span>
-                  <span class="lang lang-ar" lang="ar">استكشف</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">Explore the café menu and choose what you want.</span>
-                  <span class="lang lang-ar" lang="ar">تصفّح قائمة المقهى واختر ما تريد.</span>
-                </p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step__n">2</div>
-              <div>
-                <h3>
-                  <span class="lang lang-en">Order</span>
-                  <span class="lang lang-ar" lang="ar">اطلب</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">Submit your order with clear details so the team can prepare it quickly.</span>
-                  <span class="lang lang-ar" lang="ar">أرسل طلبك بتفاصيل واضحة ليتم تحضيره بسرعة.</span>
-                </p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step__n">3</div>
-              <div>
-                <h3>
-                  <span class="lang lang-en">Pickup or delivery</span>
-                  <span class="lang lang-ar" lang="ar">استلام أو توصيل</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">Get your order with a smooth handoff and confirmation.</span>
-                  <span class="lang lang-ar" lang="ar">استلم طلبك بسلاسة مع تأكيد واضح.</span>
-                </p>
-              </div>
-            </div>
+    <!-- ============================================
+         About Section
+         ============================================ -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section__header text-center">
+          <span class="section__label">Our Story</span>
+          <h2 class="section__title">About Caffettino</h2>
+          <p class="section__subtitle">What drives us every day to bring you exceptional coffee.</p>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-card animate-on-scroll stagger-1">
+            <div class="about-card__icon">☕</div>
+            <h3 class="about-card__title">Who We Are</h3>
+            <p class="about-card__desc">
+              Caffettino is a premium coffee company dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual that deserves care and attention.
+            </p>
           </div>
-
-          <div class="callout">
-            <h3>
-              <span class="lang lang-en">Client-friendly visibility</span>
-              <span class="lang lang-ar" lang="ar">معلومات واضحة للعميل</span>
-            </h3>
-            <p>
-              <span class="lang lang-en">
-                This page is designed to be a single, shareable overview: what
-                Caffettino is, how it works, and how to download it.
-              </span>
-              <span class="lang lang-ar" lang="ar">
-                هذه الصفحة مصممة كملخص واحد قابل للمشاركة: من هو كافيتّينو، كيف يعمل، وكيف يمكن تحميل التطبيق.
-              </span>
+          
+          <div class="about-card animate-on-scroll stagger-2">
+            <div class="about-card__icon">🎯</div>
+            <h3 class="about-card__title">Our Mission</h3>
+            <p class="about-card__desc">
+              Our mission is to bring exceptional coffee experiences to homes and businesses while supporting ethical sourcing, fair trade practices, and environmental responsibility. Every cup matters.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="apps">
-        <div class="container">
-          <h2>
-            <span class="lang lang-en">Get the app</span>
-            <span class="lang lang-ar" lang="ar">حمّل التطبيق</span>
-          </h2>
-          <p class="subhead">
-            <span class="lang lang-en">Download Caffettino on iOS and Android. (Links below are placeholders.)</span>
-            <span class="lang lang-ar" lang="ar">حمّل كافيتّينو على iOS وAndroid. (الروابط أدناه مؤقتة.)</span>
-          </p>
-
-          <div class="grid grid--2">
-            <div class="card card--tight">
-              <h3>iOS</h3>
-              <p>
-                <span class="lang lang-en">Available on the App Store.</span>
-                <span class="lang lang-ar" lang="ar">متاح على App Store.</span>
-              </p>
-              <a
-                class="btn btn--primary btn--full"
-                href="https://apps.apple.com/app/idYOUR_APP_ID"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span class="lang lang-en">Open App Store</span>
-                <span class="lang lang-ar" lang="ar">فتح App Store</span>
+    <!-- ============================================
+         App Download Section
+         ============================================ -->
+    <section class="section app-section section--dark" id="app">
+      <div class="container">
+        <div class="app-grid">
+          <div class="app-content animate-on-scroll">
+            <span class="section__label">Download Now</span>
+            <h2 class="app-content__title">The Caffettino App</h2>
+            <p class="app-content__desc">
+              Browse products, place orders, track deliveries, and get exclusive deals — all in one beautifully designed app, available in English and Arabic.
+            </p>
+            <div class="app-content__buttons">
+              <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener" class="btn btn--white">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                App Store
               </a>
-              <p class="tiny">
-                <span class="lang lang-en">Replace <strong>idYOUR_APP_ID</strong> with your real app id.</span>
-                <span class="lang lang-ar" lang="ar">استبدل <strong>idYOUR_APP_ID</strong> بمعرّف تطبيقك الحقيقي.</span>
-              </p>
-            </div>
-
-            <div class="card card--tight">
-              <h3>Android</h3>
-              <p>
-                <span class="lang lang-en">Available on Google Play.</span>
-                <span class="lang lang-ar" lang="ar">متاح على Google Play.</span>
-              </p>
-              <a
-                class="btn btn--primary btn--full"
-                href="https://play.google.com/store/apps/details?id=your.package.name"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span class="lang lang-en">Open Google Play</span>
-                <span class="lang lang-ar" lang="ar">فتح Google Play</span>
+              <a href="https://play.google.com/store/apps/details?id=your.package.name" target="_blank" rel="noopener" class="btn btn--white">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                Google Play
               </a>
-              <p class="tiny">
-                <span class="lang lang-en">Replace <strong>your.package.name</strong> with your real package.</span>
-                <span class="lang lang-ar" lang="ar">استبدل <strong>your.package.name</strong> باسم الحزمة الحقيقي.</span>
-              </p>
+            </div>
+          </div>
+          
+          <div class="app-visual animate-on-scroll stagger-2">
+            <div class="app-features">
+              <p class="app-features__title">App Highlights</p>
+              <ul class="app-features__list">
+                <li>Fast browsing across categories and deals</li>
+                <li>Real-time order tracking and notifications</li>
+                <li>Secure payments and delivery management</li>
+                <li>Available in English and Arabic</li>
+                <li>Light and dark mode support</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="section section--alt" id="support">
-        <div class="container">
-          <h2>
-            <span class="lang lang-en">Support</span>
-            <span class="lang lang-ar" lang="ar">الدعم</span>
-          </h2>
-          <div class="grid grid--2">
-            <div class="card">
-              <h3>
-                <span class="lang lang-en">Contact</span>
-                <span class="lang lang-ar" lang="ar">التواصل</span>
-              </h3>
-              <p>
-                <span class="lang lang-en">For support or business inquiries, email:</span>
-                <span class="lang lang-ar" lang="ar">للدعم أو للاستفسارات التجارية، راسلنا على:</span>
-                <a href="mailto:support@caffettino.app">support@caffettino.app</a>
-              </p>
-              <p class="tiny">
-                <span class="lang lang-en">Update the email to the correct one for your team.</span>
-                <span class="lang lang-ar" lang="ar">حدّث البريد الإلكتروني إلى العنوان الصحيح لفريقك.</span>
-              </p>
-            </div>
-            <div class="card">
-              <h3>
-                <span class="lang lang-en">Privacy</span>
-                <span class="lang lang-ar" lang="ar">الخصوصية</span>
-              </h3>
-              <p>
-                <span class="lang lang-en">We respect user privacy and only collect what’s necessary to provide the service.</span>
-                <span class="lang lang-ar" lang="ar">نحترم خصوصية المستخدم ونجمع فقط ما يلزم لتقديم الخدمة.</span>
-              </p>
-              <p class="tiny">
-                <span class="lang lang-en">Read our Privacy Policy: <a href="./privacy.html">privacy.html</a></span>
-                <span class="lang lang-ar" lang="ar">اقرأ سياسة الخصوصية: <a href="./privacy.html">privacy.html</a></span>
-              </p>
-            </div>
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="./assets/Logo_no_background.png" alt="Caffettino">
           </div>
+          <span class="footer__name">Caffettino</span>
         </div>
-      </section>
+        
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="mailto:support@caffettino.com">Contact</a>
+          <a href="https://wa.me/96171026035" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+      </div>
+      
+      <p class="footer__copy">© <span id="year"></span> Caffettino. All rights reserved.</p>
+    </div>
+  </footer>
 
-      <footer class="footer">
-        <div class="container footer__inner">
-          <div class="footer__left">
-            <div class="brand brand--small">
-              <span class="brand__mark" aria-hidden="true">
-                <svg viewBox="0 0 64 64" role="img" focusable="false">
-                  <path
-                    d="M18 28c0-9 7-16 16-16s16 7 16 16v2h2a8 8 0 0 1 0 16h-6.5A18.5 18.5 0 0 1 16 46.5V30a2 2 0 0 1 2-2h0z"
-                    fill="currentColor"
-                    opacity="0.9"
-                  />
-                  <path
-                    d="M22 52h24"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    opacity="0.8"
-                  />
-                </svg>
-              </span>
-              <span class="brand__text">Caffettino</span>
-            </div>
-            <p class="tiny">© <span id="year"></span> Caffettino. All rights reserved.</p>
-          </div>
+  <!-- ============================================
+       Scripts
+       ============================================ -->
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-          <div class="footer__right">
-            <a href="./privacy.html">
-              <span class="lang lang-en">Privacy</span>
-              <span class="lang lang-ar" lang="ar">الخصوصية</span>
-            </a>
-          </div>
-        </div>
-      </footer>
-    </main>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-    <script src="./script.js"></script>
-  </body>
+    // Scroll-triggered animations
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    animateElements.forEach(el => observer.observe(el));
+
+    // Smooth scroll for anchor links (fallback for older browsers)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
