@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <title>Caffettino — Order coffee faster</title>
+    <meta
+      name="description"
+      content="Caffettino helps customers order faster and helps cafés manage orders efficiently. Download on iOS and Android."
+    />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Caffettino home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false">
+              <path
+                d="M18 28c0-9 7-16 16-16s16 7 16 16v2h2a8 8 0 0 1 0 16h-6.5A18.5 18.5 0 0 1 16 46.5V30a2 2 0 0 1 2-2h0z"
+                fill="currentColor"
+                opacity="0.9"
+              />
+              <path
+                d="M22 52h24"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+                opacity="0.8"
+              />
+              <path
+                d="M26 14c0 3-3 4-3 7m10-9c0 3-3 4-3 7m10-9c0 3-3 4-3 7"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+                opacity="0.8"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">Caffettino</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" data-nav>
+          <a href="#what">What we do</a>
+          <a href="#how">How it works</a>
+          <a href="#apps">Get the app</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Coffee, streamlined</p>
+            <h1>Order faster. Serve smarter.</h1>
+            <p class="lead">
+              Caffettino connects customers and cafés with a smooth ordering
+              experience—from browsing to pickup or delivery.
+            </p>
+
+            <div class="cta">
+              <a class="btn btn--primary" href="#apps">Download</a>
+              <a class="btn btn--ghost" href="#what">Learn more</a>
+            </div>
+
+            <p class="note">
+              Replace the store links in <code>website/index.html</code> once your
+              iOS/Android listings are live.
+            </p>
+          </div>
+
+          <div class="hero__card" aria-label="Product highlights">
+            <div class="stat">
+              <div class="stat__k">Customers</div>
+              <div class="stat__v">Order in seconds</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Cafés</div>
+              <div class="stat__v">Organized order flow</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Teams</div>
+              <div class="stat__v">Role-based access</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Delivery</div>
+              <div class="stat__v">Accurate handoff</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="what">
+        <div class="container">
+          <h2>What we do</h2>
+          <p class="subhead">
+            Caffettino is an ordering and operations platform for modern cafés.
+          </p>
+
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>Better ordering</h3>
+              <p>
+                Customers browse products, place orders, and get clear status
+                updates—without friction.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Operational clarity</h3>
+              <p>
+                Staff workflows are designed to keep orders moving smoothly and
+                reduce mistakes.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Built for scale</h3>
+              <p>
+                From a single store to multi-branch operations, the system keeps
+                data and roles organized.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="how">
+        <div class="container">
+          <h2>How it works</h2>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step__n">1</div>
+              <div>
+                <h3>Discover</h3>
+                <p>Explore the café menu and choose what you want.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__n">2</div>
+              <div>
+                <h3>Order</h3>
+                <p>
+                  Submit your order with clear details so the team can prepare it
+                  quickly.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__n">3</div>
+              <div>
+                <h3>Pickup or delivery</h3>
+                <p>Get your order with a smooth handoff and confirmation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <h3>Client-friendly visibility</h3>
+            <p>
+              This page is designed to be a single, shareable overview: what
+              Caffettino is, how it works, and how to download it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apps">
+        <div class="container">
+          <h2>Get the app</h2>
+          <p class="subhead">
+            Download Caffettino on iOS and Android. (Links below are placeholders.)
+          </p>
+
+          <div class="grid grid--2">
+            <div class="card card--tight">
+              <h3>iOS</h3>
+              <p>Available on the App Store.</p>
+              <a
+                class="btn btn--primary btn--full"
+                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open App Store
+              </a>
+              <p class="tiny">
+                Replace <strong>idYOUR_APP_ID</strong> with your real app id.
+              </p>
+            </div>
+
+            <div class="card card--tight">
+              <h3>Android</h3>
+              <p>Available on Google Play.</p>
+              <a
+                class="btn btn--primary btn--full"
+                href="https://play.google.com/store/apps/details?id=your.package.name"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open Google Play
+              </a>
+              <p class="tiny">
+                Replace <strong>your.package.name</strong> with your real package.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="support">
+        <div class="container">
+          <h2>Support</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>Contact</h3>
+              <p>
+                For support or business inquiries, email:
+                <a href="mailto:support@caffettino.app">support@caffettino.app</a>
+              </p>
+              <p class="tiny">
+                Update the email to the correct one for your team.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Privacy</h3>
+              <p>
+                We respect user privacy and only collect what’s necessary to
+                provide the service.
+              </p>
+              <p class="tiny">
+                Read our Privacy Policy: <a href="./privacy.html">privacy.html</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <div class="brand brand--small">
+              <span class="brand__mark" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img" focusable="false">
+                  <path
+                    d="M18 28c0-9 7-16 16-16s16 7 16 16v2h2a8 8 0 0 1 0 16h-6.5A18.5 18.5 0 0 1 16 46.5V30a2 2 0 0 1 2-2h0z"
+                    fill="currentColor"
+                    opacity="0.9"
+                  />
+                  <path
+                    d="M22 52h24"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    opacity="0.8"
+                  />
+                </svg>
+              </span>
+              <span class="brand__text">Caffettino</span>
+            </div>
+            <p class="tiny">© <span id="year"></span> Caffettino. All rights reserved.</p>
+          </div>
+
+          <div class="footer__right">
+            <a href="./privacy.html">Privacy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
