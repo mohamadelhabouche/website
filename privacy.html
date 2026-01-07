@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#0F3F25" />
 
     <title>Privacy Policy — Caffettino</title>
     <meta
@@ -16,42 +16,45 @@
   </head>
 
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main">
+      <span class="lang lang-en">Skip to content</span>
+      <span class="lang lang-ar" lang="ar">تخطي إلى المحتوى</span>
+    </a>
 
     <header class="header">
       <div class="container header__inner">
         <a class="brand" href="./index.html#top" aria-label="Caffettino home">
           <span class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 64 64" role="img" focusable="false">
-              <path
-                d="M18 28c0-9 7-16 16-16s16 7 16 16v2h2a8 8 0 0 1 0 16h-6.5A18.5 18.5 0 0 1 16 46.5V30a2 2 0 0 1 2-2h0z"
-                fill="currentColor"
-                opacity="0.9"
-              />
-              <path
-                d="M22 52h24"
-                stroke="currentColor"
-                stroke-width="4"
-                stroke-linecap="round"
-                opacity="0.8"
-              />
-              <path
-                d="M26 14c0 3-3 4-3 7m10-9c0 3-3 4-3 7m10-9c0 3-3 4-3 7"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                fill="none"
-                opacity="0.8"
-              />
-            </svg>
+            <img
+              src="./assets/images/logo.png"
+              alt=""
+              width="34"
+              height="34"
+              loading="eager"
+              decoding="async"
+            />
           </span>
           <span class="brand__text">Caffettino</span>
         </a>
 
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-toggle__btn" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-toggle__btn" data-set-lang="ar" aria-pressed="false">AR</button>
+        </div>
+
         <nav class="nav" aria-label="Primary">
-          <a href="./index.html#what">What we do</a>
-          <a href="./index.html#apps">Get the app</a>
-          <a href="./privacy.html" aria-current="page">Privacy</a>
+          <a href="./index.html#about">
+            <span class="lang lang-en">About</span>
+            <span class="lang lang-ar" lang="ar">من نحن</span>
+          </a>
+          <a href="./index.html#apps">
+            <span class="lang lang-en">Get the app</span>
+            <span class="lang lang-ar" lang="ar">حمّل التطبيق</span>
+          </a>
+          <a href="./privacy.html" aria-current="page">
+            <span class="lang lang-en">Privacy</span>
+            <span class="lang lang-ar" lang="ar">الخصوصية</span>
+          </a>
         </nav>
       </div>
     </header>
@@ -59,17 +62,28 @@
     <main id="main">
       <section class="section">
         <div class="container">
-          <h1 style="font-size:42px; margin:0 0 10px">Privacy Policy</h1>
+          <h1 style="font-size:42px; margin:0 0 10px">
+            <span class="lang lang-en">Privacy Policy</span>
+            <span class="lang lang-ar" lang="ar">سياسة الخصوصية</span>
+          </h1>
           <p class="subhead" style="margin-bottom:12px">
-            This policy explains how Caffettino (“we”, “us”) collects and uses
-            information when you use our mobile apps and related services.
+            <span class="lang lang-en">
+              This policy explains how Caffettino (“we”, “us”) collects and uses
+              information when you use our mobile apps and related services.
+            </span>
+            <span class="lang lang-ar" lang="ar">
+              توضح هذه السياسة كيف يقوم كافيتّينو ("نحن") بجمع المعلومات واستخدامها
+              عند استخدام تطبيقاتنا وخدماتنا.
+            </span>
           </p>
 
           <div class="card">
             <p style="margin:0; color:var(--muted); line-height:1.6">
-              <strong>Effective date:</strong> January 7, 2026
+              <span class="lang lang-en"><strong>Effective date:</strong> January 7, 2026</span>
+              <span class="lang lang-ar" lang="ar"><strong>تاريخ السريان:</strong> 7 يناير 2026</span>
               <br />
-              <strong>Contact:</strong>
+              <span class="lang lang-en"><strong>Contact:</strong></span>
+              <span class="lang lang-ar" lang="ar"><strong>للتواصل:</strong></span>
               <a href="mailto:support@caffettino.app">support@caffettino.app</a>
             </p>
           </div>
@@ -78,12 +92,18 @@
 
           <div class="grid grid--2">
             <div class="card">
-              <h3>Information we collect</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Information we collect</span>
+                <span class="lang lang-ar" lang="ar">المعلومات التي نجمعها</span>
+              </h3>
+              <p class="lang lang-en">
                 We may collect information you provide and information generated
                 when you use the service, including:
               </p>
-              <p>
+              <p class="lang lang-ar" lang="ar">
+                قد نجمع معلومات تقدمها لنا ومعلومات يتم إنشاؤها عند استخدام الخدمة، بما في ذلك:
+              </p>
+              <p class="lang lang-en">
                 - Account/profile details (e.g. name, contact details you enter)
                 <br />
                 - Order details (items, quantities, timestamps, status)
@@ -94,14 +114,29 @@
                 <br />
                 - Location (only if you enable location features)
               </p>
+              <p class="lang lang-ar" lang="ar">
+                - معلومات الحساب/الملف الشخصي (مثل الاسم وبيانات التواصل التي تدخلها)
+                <br />
+                - تفاصيل الطلبات (العناصر، الكميات، التوقيتات، الحالة)
+                <br />
+                - معلومات الجهاز والتطبيق (إصدار التطبيق، معرّفات الجهاز)
+                <br />
+                - رموز الإشعارات (لإرسال تحديثات الطلب)
+                <br />
+                - الموقع (فقط إذا فعّلت ميزات الموقع)
+              </p>
               <p class="tiny">
-                Note: tailor this list to match your exact production behavior.
+                <span class="lang lang-en">Note: tailor this list to match your exact production behavior.</span>
+                <span class="lang lang-ar" lang="ar">ملاحظة: عدّل هذه القائمة لتطابق سلوك التطبيق الفعلي في الإنتاج.</span>
               </p>
             </div>
 
             <div class="card">
-              <h3>How we use information</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">How we use information</span>
+                <span class="lang lang-ar" lang="ar">كيف نستخدم المعلومات</span>
+              </h3>
+              <p class="lang lang-en">
                 We use information to:
                 <br />
                 - Provide and operate the service (sign-in, ordering, delivery)
@@ -112,14 +147,29 @@
                 <br />
                 - Comply with legal requirements when applicable
               </p>
+              <p class="lang lang-ar" lang="ar">
+                نستخدم المعلومات من أجل:
+                <br />
+                - تقديم وتشغيل الخدمة (تسجيل الدخول، الطلب، التوصيل)
+                <br />
+                - التواصل معك (إشعارات الطلب والحساب)
+                <br />
+                - تحسين الاعتمادية ومنع إساءة الاستخدام
+                <br />
+                - الامتثال للمتطلبات القانونية عند الحاجة
+              </p>
               <p class="tiny">
-                We do not sell personal information.
+                <span class="lang lang-en">We do not sell personal information.</span>
+                <span class="lang lang-ar" lang="ar">نحن لا نبيع المعلومات الشخصية.</span>
               </p>
             </div>
 
             <div class="card">
-              <h3>Sharing</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Sharing</span>
+                <span class="lang lang-ar" lang="ar">مشاركة المعلومات</span>
+              </h3>
+              <p class="lang lang-en">
                 We may share information with:
                 <br />
                 - Service providers that help us run the app (e.g. hosting,
@@ -129,15 +179,27 @@
                 <br />
                 - Authorities if required by law
               </p>
+              <p class="lang lang-ar" lang="ar">
+                قد نشارك المعلومات مع:
+                <br />
+                - مزودي خدمات يساعدوننا في تشغيل التطبيق (مثل الاستضافة، التحليلات، الإشعارات)
+                <br />
+                - المقاهي/التجار الذين ينفذون طلبك (لإتمام الخدمة)
+                <br />
+                - الجهات الرسمية إذا كان ذلك مطلوبًا بموجب القانون
+              </p>
               <p class="tiny">
-                If you use Firebase services, mention the specific Firebase
-                products enabled and link their policies.
+                <span class="lang lang-en">If you use Firebase services, mention the specific Firebase products enabled and link their policies.</span>
+                <span class="lang lang-ar" lang="ar">إذا كنت تستخدم خدمات Firebase، اذكر المنتجات المستخدمة واربط سياساتها.</span>
               </p>
             </div>
 
             <div class="card">
-              <h3>Your choices</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Your choices</span>
+                <span class="lang lang-ar" lang="ar">خياراتك</span>
+              </h3>
+              <p class="lang lang-en">
                 Depending on your region and how the app is configured, you may be
                 able to:
                 <br />
@@ -149,39 +211,76 @@
                 <br />
                 - Request deletion of your account/data (contact support)
               </p>
+              <p class="lang lang-ar" lang="ar">
+                اعتمادًا على منطقتك وكيفية إعداد التطبيق، قد تتمكن من:
+                <br />
+                - الوصول إلى ملفك الشخصي أو تحديثه
+                <br />
+                - إيقاف الإشعارات من إعدادات الجهاز
+                <br />
+                - إيقاف أذونات الموقع من إعدادات الجهاز
+                <br />
+                - طلب حذف حسابك/بياناتك (تواصل مع الدعم)
+              </p>
             </div>
 
             <div class="card">
-              <h3>Data retention</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Data retention</span>
+                <span class="lang lang-ar" lang="ar">الاحتفاظ بالبيانات</span>
+              </h3>
+              <p class="lang lang-en">
                 We retain information only as long as necessary for operational,
                 legal, or security purposes. Retention may vary by data type (e.g.
                 orders vs. logs).
               </p>
-            </div>
-
-            <div class="card">
-              <h3>Security</h3>
-              <p>
-                We use reasonable safeguards to protect information. No method of
-                transmission or storage is 100% secure.
+              <p class="lang lang-ar" lang="ar">
+                نحتفظ بالمعلومات فقط للمدة اللازمة لأغراض تشغيلية أو قانونية أو أمنية.
+                وقد تختلف مدة الاحتفاظ حسب نوع البيانات (مثل الطلبات مقابل السجلات).
               </p>
             </div>
 
             <div class="card">
-              <h3>Children</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Security</span>
+                <span class="lang lang-ar" lang="ar">الأمان</span>
+              </h3>
+              <p class="lang lang-en">
+                We use reasonable safeguards to protect information. No method of
+                transmission or storage is 100% secure.
+              </p>
+              <p class="lang lang-ar" lang="ar">
+                نستخدم إجراءات حماية معقولة لحماية المعلومات. لا توجد طريقة نقل أو تخزين آمنة 100%.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>
+                <span class="lang lang-en">Children</span>
+                <span class="lang lang-ar" lang="ar">الأطفال</span>
+              </h3>
+              <p class="lang lang-en">
                 The service is not intended for children under the age required by
                 local law to consent to data processing. If you believe a child has
                 provided information, contact us.
               </p>
+              <p class="lang lang-ar" lang="ar">
+                الخدمة غير مخصصة للأطفال دون السن الذي يتطلبه القانون المحلي للموافقة على معالجة البيانات.
+                إذا كنت تعتقد أن طفلًا قدم معلومات، تواصل معنا.
+              </p>
             </div>
 
             <div class="card">
-              <h3>Changes</h3>
-              <p>
+              <h3>
+                <span class="lang lang-en">Changes</span>
+                <span class="lang lang-ar" lang="ar">التغييرات</span>
+              </h3>
+              <p class="lang lang-en">
                 We may update this policy. We will post the latest version on this
                 page and update the effective date.
+              </p>
+              <p class="lang lang-ar" lang="ar">
+                قد نقوم بتحديث هذه السياسة. سننشر أحدث نسخة على هذه الصفحة ونحدّث تاريخ السريان.
               </p>
             </div>
           </div>
@@ -189,17 +288,29 @@
           <div style="height:18px"></div>
 
           <div class="callout">
-            <h3>Need this to be App Store/Play Console ready?</h3>
+            <h3>
+              <span class="lang lang-en">Need this to be App Store/Play Console ready?</span>
+              <span class="lang lang-ar" lang="ar">هل تريدها جاهزة لمتجر التطبيقات؟</span>
+            </h3>
             <p>
-              Tell me what data you actually collect in production (auth method,
-              notifications, location, analytics), and I’ll align this policy to
-              match.
+              <span class="lang lang-en">
+                Tell me what data you actually collect in production (auth method,
+                notifications, location, analytics), and I’ll align this policy to
+                match.
+              </span>
+              <span class="lang lang-ar" lang="ar">
+                أخبرني ما هي البيانات التي يجمعها التطبيق فعليًا في الإنتاج (طريقة تسجيل الدخول، الإشعارات، الموقع، التحليلات)
+                وسأقوم بضبط السياسة لتطابق ذلك.
+              </span>
             </p>
           </div>
 
           <div style="height:18px"></div>
 
-          <a class="btn btn--ghost" href="./index.html#support">Back to support</a>
+          <a class="btn btn--ghost" href="./index.html#support">
+            <span class="lang lang-en">Back to support</span>
+            <span class="lang lang-ar" lang="ar">العودة إلى الدعم</span>
+          </a>
         </div>
       </section>
 
@@ -229,7 +340,10 @@
           </div>
 
           <div class="footer__right">
-            <a href="./index.html#top">Home</a>
+            <a href="./index.html#top">
+              <span class="lang lang-en">Home</span>
+              <span class="lang lang-ar" lang="ar">الرئيسية</span>
+            </a>
           </div>
         </div>
       </footer>
