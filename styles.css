@@ -60,17 +60,26 @@ body.rtl {
 }
 
 /* ============================================
+   Language Toggle Section
+   ============================================ */
+.toggle-section {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background: var(--bg);
+}
+
+.lang-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ============================================
    Language Toggle Switch (Modern Sliding Pill)
    ============================================ */
 .lang-toggle {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: fit-content;
-  z-index: 999;
-  display: flex;
+  position: relative;
+  display: inline-flex;
   direction: ltr; /* Always keep EN on left, AR on right */
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -280,10 +289,11 @@ body.rtl .lang-toggle__indicator {
    Hero
    ============================================ */
 .hero {
-  min-height: 100vh;
+  min-height: 0;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 0;
+  padding-bottom: 60px;
   background: var(--bg);
   overflow: hidden;
   position: relative;
@@ -910,7 +920,7 @@ body.rtl .lang-toggle__indicator {
 }
 
 @media (max-width: 768px) {
-  .section { padding: 70px 0; }
+  .section { padding: 20px 0; }
   
   .nav-pill {
     padding: 6px 14px;

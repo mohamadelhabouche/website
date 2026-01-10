@@ -51,16 +51,24 @@
 
   <main id="main">
     <!-- ============================================
+         Language Toggle Section
+         ============================================ -->
+    <section class="toggle-section">
+      <div class="container">
+        <div class="lang-toggle-wrapper">
+          <div class="lang-toggle" id="lang-toggle">
+            <div class="lang-toggle__indicator"></div>
+            <span class="lang-toggle__label lang-toggle__label--en" onclick="setLanguage('en')">EN</span>
+            <span class="lang-toggle__label lang-toggle__label--ar" onclick="setLanguage('ar')">AR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
          Hero Section
          ============================================ -->
     <section class="hero section" id="home">
-      <!-- Language Toggle Switch -->
-      <div class="lang-toggle" id="lang-toggle">
-        <div class="lang-toggle__indicator"></div>
-        <span class="lang-toggle__label lang-toggle__label--en" onclick="setLanguage('en')">EN</span>
-        <span class="lang-toggle__label lang-toggle__label--ar" onclick="setLanguage('ar')">AR</span>
-      </div>
-      
       <div class="container">
         <div class="hero__grid">
           <div class="hero__content">
