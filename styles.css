@@ -93,6 +93,8 @@ body.rtl {
   transition: color 0.3s ease;
   user-select: none;
   color: var(--text-muted);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .lang-toggle__label:hover {
