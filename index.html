@@ -33,7 +33,7 @@
           <a href="#products" class="nav-link">Products</a>
           <a href="#location" class="nav-link">Location</a>
           
-          <a href="#home" class="nav-logo" aria-label="Home">
+          <a href="#why-us" class="nav-logo" aria-label="Why Choose Us">
             <img src="./assets/Logo_no_background.png" alt="Caffettino">
           </a>
           
@@ -72,110 +72,10 @@
       </div>
     </section>
 
-    <!-- Marquee between Home and Products -->
-    <div class="marquee">
-      <div class="marquee__track">
-        <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
-        </div>
-        <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================
-         Products Section
-         ============================================ -->
-    <section class="section section--alt" id="products">
-      <div class="container">
-        <div class="section__header text-center">
-          <span class="section__label">What We Offer</span>
-          <h2 class="section__title">Our Products</h2>
-          <p class="section__subtitle">Premium coffee products, straight from our app to your doorstep.</p>
-        </div>
-        
-        <div class="products-grid" id="products-grid">
-          <!-- Products will be rendered by JavaScript from the list below -->
-        </div>
-      </div>
-    </section>
-
-    <script>
-      // =============================================
-      // PRODUCT LIST - Update this array with your products
-      // =============================================
-      const products = [
-        {
-          image: "https://ik.imagekit.io/caffettino/macchinetta.png",
-          name: "Espresso Blend",
-          description: "A rich, bold espresso with notes of dark chocolate and caramel. Perfect for your morning ritual."
-        },
-        {
-          image: "https://via.placeholder.com/400x400?text=Product+2",
-          name: "Arabica Gold",
-          description: "Premium single-origin Arabica beans, medium roast with fruity and floral notes."
-        },
-        {
-          image: "https://via.placeholder.com/400x400?text=Product+3",
-          name: "Capsule Variety Pack",
-          description: "Try our best-selling capsules. Compatible with all major machines. 50 capsules included."
-        },
-        {
-          image: "https://via.placeholder.com/400x400?text=Product+4",
-          name: "Classic Macchinetta",
-          description: "Traditional Italian stovetop espresso maker. Brews 6 cups of authentic Italian coffee."
-        },
-        {
-          image: "https://via.placeholder.com/400x400?text=Product+5",
-          name: "Decaf Delight",
-          description: "All the flavor, none of the caffeine. Smooth, balanced, and perfect for evening enjoyment."
-        },
-        {
-          image: "https://via.placeholder.com/400x400?text=Product+6",
-          name: "Coffee Gift Set",
-          description: "The perfect gift for coffee lovers. Includes premium beans, a cup, and accessories."
-        }
-      ];
-
-      // Render products to the grid
-      function renderProducts() {
-        const grid = document.getElementById('products-grid');
-        grid.innerHTML = products.map((product, index) => `
-          <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
-            <div class="product-card__image-wrap">
-              <img src="${product.image}" alt="${product.name}" class="product-card__image">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__name">${product.name}</h3>
-              <p class="product-card__desc">${product.description}</p>
-            </div>
-          </div>
-        `).join('');
-      }
-
-      // Initialize products immediately
-      renderProducts();
-    </script>
-
     <!-- ============================================
          Features / Why Caffettino
          ============================================ -->
-    <section class="section section--dark">
+    <section class="section section--dark" id="why-us">
       <div class="container">
         <div class="section__header text-center">
           <span class="section__label">Why Choose Us</span>
@@ -206,6 +106,91 @@
     </section>
 
     <!-- ============================================
+         Products Section
+         ============================================ -->
+    <section class="section section--alt" id="products">
+      <div class="container">
+        <div class="section__header text-center">
+          <span class="section__label">What We Offer</span>
+          <h2 class="section__title">Our Products</h2>
+          <p class="section__subtitle">Premium coffee products, straight from our app to your doorstep.</p>
+        </div>
+        
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be rendered by JavaScript from the list below -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // =============================================
+      // PRODUCT LIST - Update this array with your products
+      // =============================================
+      const products = [
+        {
+          image: "https://ik.imagekit.io/caffettino/grano.png",
+          name: "Espresso Coffee Beans",
+          description: "The ideal choice for anyone who wants to grind on-demand and obtain maximum freshness and aroma"
+        },
+        {
+          image: "https://ik.imagekit.io/caffettino/macchinetta.png",
+          name: "Espresso Machine",
+          description: "Compact and stylish espresso machine, easy to operate with consistent creamy results."
+        },
+        {
+          image: "https://ik.imagekit.io/caffettino/cialde.png",
+          name: "Capsules and Pods",
+          description: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing."
+        }
+      ];
+
+      // Render products to the grid
+      function renderProducts() {
+        const grid = document.getElementById('products-grid');
+        grid.innerHTML = products.map((product, index) => `
+          <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
+            <div class="product-card__image-wrap">
+              <img src="${product.image}" alt="${product.name}" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">${product.name}</h3>
+              <p class="product-card__desc">${product.description}</p>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Initialize products immediately
+      renderProducts();
+    </script>
+
+    <!-- Marquee after Products -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+        <div class="marquee__content">
+          <span class="marquee__item">Premium Coffee</span>
+          <span class="marquee__item">Authentic Italian Taste</span>
+          <span class="marquee__item">Fast Delivery</span>
+          <span class="marquee__item">Sustainable Sourcing</span>
+          <span class="marquee__item">Handcrafted Blends</span>
+          <span class="marquee__item">Fresh Roasts</span>
+          <span class="marquee__item">Expert Baristas</span>
+          <span class="marquee__item">Quality First</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
          Location & Contact Section
          ============================================ -->
     <section class="section" id="location">
@@ -225,10 +210,10 @@
               <strong>📞 Phone</strong><br>
               +961 71 026 035<br><br>
               <strong>✉️ Email</strong><br>
-              support@caffettino.com
+              support@caffettino-group.it
             </div>
             <div class="contact-card__buttons">
-              <a href="mailto:support@caffettino.com" class="btn btn--primary">Email Us</a>
+              <a href="mailto:support@caffettino-group.it" class="btn btn--primary">Email Us</a>
               <a href="https://wa.me/96171026035?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn--whatsapp">
                 Chat on WhatsApp
               </a>
@@ -339,7 +324,6 @@
                 <li>Real-time order tracking and notifications</li>
                 <li>Secure payments and delivery management</li>
                 <li>Available in English and Arabic</li>
-                <li>Light and dark mode support</li>
               </ul>
             </div>
           </div>
@@ -355,15 +339,13 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
-          <div class="footer__logo">
-            <img src="./assets/Logo_no_background.png" alt="Caffettino">
-          </div>
+          <img src="./assets/Logo_no_background.png" alt="Caffettino" class="footer__logo-img">
           <span class="footer__name">Caffettino</span>
         </div>
         
         <nav class="footer__links" aria-label="Footer navigation">
           <a href="./privacy.html">Privacy Policy</a>
-          <a href="mailto:support@caffettino.com">Contact</a>
+          <a href="mailto:support@caffettino-group.it">Contact</a>
           <a href="https://wa.me/96171026035" target="_blank" rel="noopener">WhatsApp</a>
         </nav>
       </div>

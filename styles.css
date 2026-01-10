@@ -24,6 +24,11 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Remove tap highlight on mobile */
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -147,6 +152,7 @@ body {
   border-radius: 999px;
   box-shadow: var(--shadow-md);
   animation: fadeInUp 0.8s ease-out;
+  transition: transform 0.4s ease, padding 0.4s ease, gap 0.4s ease;
 }
 
 .nav-link {
@@ -156,7 +162,7 @@ body {
   font-size: 14px;
   padding: 10px 14px;
   border-radius: 999px;
-  transition: background var(--transition), transform var(--transition);
+  transition: background var(--transition), transform var(--transition), font-size 0.4s ease, padding 0.4s ease;
   white-space: nowrap;
   min-width: 80px;
   text-align: center;
@@ -175,7 +181,7 @@ body {
   margin: -8px 8px;
   background: var(--primary);
   border-radius: 50%;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform 0.4s ease, box-shadow var(--transition), width 0.4s ease, height 0.4s ease, margin 0.4s ease;
 }
 .nav-logo:hover {
   transform: scale(1.08);
@@ -184,6 +190,7 @@ body {
 .nav-logo img {
   height: 52px;
   width: auto;
+  transition: height 0.4s ease;
 }
 
 /* ============================================
@@ -194,20 +201,9 @@ body {
   display: flex;
   align-items: center;
   padding-top: 100px;
-  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-alt) 100%);
+  background: var(--bg);
   overflow: hidden;
   position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 80%;
-  height: 150%;
-  background: radial-gradient(circle, rgba(15,63,37,0.06) 0%, transparent 70%);
-  pointer-events: none;
 }
 
 .hero__grid {
@@ -453,7 +449,7 @@ body {
 }
 
 .product-card {
-  background: linear-gradient(145deg, #ffffff 0%, #f8f8f8 100%);
+  background-color: var(--white);
   border-radius: 40px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.08);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -467,7 +463,6 @@ body {
   inset: 0;
   border-radius: 40px;
   padding: 2px;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -671,18 +666,9 @@ body {
    App Download CTA
    ============================================ */
 .app-section {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: var(--primary);
   position: relative;
   overflow: hidden;
-}
-.app-section::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -20%;
-  width: 60%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(201,166,107,0.1) 0%, transparent 60%);
 }
 
 .app-grid {
@@ -787,6 +773,10 @@ body {
 }
 .footer__logo img {
   height: 34px;
+}
+.footer__logo-img {
+  height: 48px;
+  width: auto;
 }
 .footer__name {
   font-weight: 700;
