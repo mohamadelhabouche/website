@@ -15,9 +15,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Arabic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
+  
+  <!-- Translations -->
+  <script src="./translations.js"></script>
 </head>
 <body>
   <!-- Skip link -->
@@ -30,15 +35,15 @@
     <div class="container">
       <div class="header__inner">
         <nav class="nav-pill" aria-label="Primary navigation">
-          <a href="#products" class="nav-link">Products</a>
-          <a href="#location" class="nav-link">Location</a>
+          <a href="#products" class="nav-link" data-i18n="nav_products">Products</a>
+          <a href="#location" class="nav-link" data-i18n="nav_location">Location</a>
           
           <a href="#why-us" class="nav-logo" aria-label="Why Choose Us">
             <img src="./assets/Logo_no_background.png" alt="Caffettino">
           </a>
           
-          <a href="#about" class="nav-link">About</a>
-          <a href="#app" class="nav-link">App</a>
+          <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+          <a href="#app" class="nav-link" data-i18n="nav_app">App</a>
         </nav>
       </div>
     </div>
@@ -49,23 +54,30 @@
          Hero Section
          ============================================ -->
     <section class="hero section" id="home">
+      <!-- Language Toggle Switch -->
+      <div class="lang-toggle" id="lang-toggle">
+        <div class="lang-toggle__indicator"></div>
+        <span class="lang-toggle__label lang-toggle__label--en" onclick="setLanguage('en')">EN</span>
+        <span class="lang-toggle__label lang-toggle__label--ar" onclick="setLanguage('ar')">AR</span>
+      </div>
+      
       <div class="container">
         <div class="hero__grid">
           <div class="hero__content">
             <div class="hero__badge">
               <img src="./assets/Logo_no_background.png" alt="Caffettino" class="hero__badge-logo">
-              Premium Coffee Solutions
+              <span data-i18n="hero_badge">Premium Coffee Solutions</span>
             </div>
             
-            <h1 class="hero__title">Fall in Love with Coffee in Blissful Delight</h1>
+            <h1 class="hero__title" data-i18n="hero_title">Fall in Love with Coffee in Blissful Delight</h1>
             
-            <p class="hero__subtitle">
+            <p class="hero__subtitle" data-i18n="hero_subtitle">
               Caffettino is dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual.
             </p>
             
             <div class="hero__buttons">
-              <a href="#products" class="btn btn--primary">Explore Products</a>
-              <a href="#app" class="btn btn--outline">Get the App</a>
+              <a href="#products" class="btn btn--primary" data-i18n="hero_btn_products">Explore Products</a>
+              <a href="#app" class="btn btn--outline" data-i18n="hero_btn_app">Get the App</a>
             </div>
           </div>
         </div>
@@ -78,28 +90,28 @@
     <section class="section section--dark" id="why-us">
       <div class="container">
         <div class="section__header text-center">
-          <span class="section__label">Why Choose Us</span>
-          <h2 class="section__title">The Caffettino Difference</h2>
-          <p class="section__subtitle">We're committed to quality, sustainability, and exceptional service.</p>
+          <span class="section__label" data-i18n="whyus_label">Why Choose Us</span>
+          <h2 class="section__title" data-i18n="whyus_title">The Caffettino Difference</h2>
+          <p class="section__subtitle" data-i18n="whyus_subtitle">We're committed to quality, sustainability, and exceptional service.</p>
         </div>
         
         <div class="features-grid">
           <div class="feature-item animate-on-scroll stagger-1">
             <div class="feature-item__icon">🌱</div>
-            <h3 class="feature-item__title">Ethically Sourced</h3>
-            <p class="feature-item__desc">All our beans come from fair trade farms that prioritize environmental responsibility.</p>
+            <h3 class="feature-item__title" data-i18n="whyus_f1_title">Ethically Sourced</h3>
+            <p class="feature-item__desc" data-i18n="whyus_f1_desc">All our beans come from fair trade farms that prioritize environmental responsibility.</p>
           </div>
           
           <div class="feature-item animate-on-scroll stagger-2">
             <div class="feature-item__icon">🚀</div>
-            <h3 class="feature-item__title">Fast Delivery</h3>
-            <p class="feature-item__desc">Order through our app and receive your coffee within days, freshly packed just for you.</p>
+            <h3 class="feature-item__title" data-i18n="whyus_f2_title">Fast Delivery</h3>
+            <p class="feature-item__desc" data-i18n="whyus_f2_desc">Order through our app and receive your coffee within days, freshly packed just for you.</p>
           </div>
           
           <div class="feature-item animate-on-scroll stagger-3">
             <div class="feature-item__icon">💬</div>
-            <h3 class="feature-item__title">Dedicated Support</h3>
-            <p class="feature-item__desc">Questions? Our team is ready to help via WhatsApp, email, or phone.</p>
+            <h3 class="feature-item__title" data-i18n="whyus_f3_title">Dedicated Support</h3>
+            <p class="feature-item__desc" data-i18n="whyus_f3_desc">Questions? Our team is ready to help via WhatsApp, email, or phone.</p>
           </div>
         </div>
       </div>
@@ -111,81 +123,39 @@
     <section class="section section--alt" id="products">
       <div class="container">
         <div class="section__header text-center">
-          <span class="section__label">What We Offer</span>
-          <h2 class="section__title">Our Products</h2>
-          <p class="section__subtitle">Premium coffee products, straight from our app to your doorstep.</p>
+          <span class="section__label" data-i18n="products_label">What We Offer</span>
+          <h2 class="section__title" data-i18n="products_title">Our Products</h2>
+          <p class="section__subtitle" data-i18n="products_subtitle">Premium coffee products, straight from our app to your doorstep.</p>
         </div>
         
         <div class="products-grid" id="products-grid">
-          <!-- Products will be rendered by JavaScript from the list below -->
+          <!-- Products will be rendered by JavaScript -->
         </div>
       </div>
     </section>
 
-    <script>
-      // =============================================
-      // PRODUCT LIST - Update this array with your products
-      // =============================================
-      const products = [
-        {
-          image: "https://ik.imagekit.io/caffettino/grano.png",
-          name: "Espresso Coffee Beans",
-          description: "The ideal choice for anyone who wants to grind on-demand and obtain maximum freshness and aroma"
-        },
-        {
-          image: "https://ik.imagekit.io/caffettino/macchinetta.png",
-          name: "Espresso Machine",
-          description: "Compact and stylish espresso machine, easy to operate with consistent creamy results."
-        },
-        {
-          image: "https://ik.imagekit.io/caffettino/cialde.png",
-          name: "Capsules and Pods",
-          description: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing."
-        }
-      ];
-
-      // Render products to the grid
-      function renderProducts() {
-        const grid = document.getElementById('products-grid');
-        grid.innerHTML = products.map((product, index) => `
-          <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
-            <div class="product-card__image-wrap">
-              <img src="${product.image}" alt="${product.name}" class="product-card__image">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__name">${product.name}</h3>
-              <p class="product-card__desc">${product.description}</p>
-            </div>
-          </div>
-        `).join('');
-      }
-
-      // Initialize products immediately
-      renderProducts();
-    </script>
-
     <!-- Marquee after Products -->
-    <div class="marquee">
+    <div class="marquee" id="marquee-1">
       <div class="marquee__track">
         <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
+          <span class="marquee__item" data-i18n="marquee_1">Premium Coffee</span>
+          <span class="marquee__item" data-i18n="marquee_2">Authentic Italian Taste</span>
+          <span class="marquee__item" data-i18n="marquee_3">Fast Delivery</span>
+          <span class="marquee__item" data-i18n="marquee_4">Sustainable Sourcing</span>
+          <span class="marquee__item" data-i18n="marquee_5">Handcrafted Blends</span>
+          <span class="marquee__item" data-i18n="marquee_6">Fresh Roasts</span>
+          <span class="marquee__item" data-i18n="marquee_7">Expert Baristas</span>
+          <span class="marquee__item" data-i18n="marquee_8">Quality First</span>
         </div>
         <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
+          <span class="marquee__item" data-i18n="marquee_1">Premium Coffee</span>
+          <span class="marquee__item" data-i18n="marquee_2">Authentic Italian Taste</span>
+          <span class="marquee__item" data-i18n="marquee_3">Fast Delivery</span>
+          <span class="marquee__item" data-i18n="marquee_4">Sustainable Sourcing</span>
+          <span class="marquee__item" data-i18n="marquee_5">Handcrafted Blends</span>
+          <span class="marquee__item" data-i18n="marquee_6">Fresh Roasts</span>
+          <span class="marquee__item" data-i18n="marquee_7">Expert Baristas</span>
+          <span class="marquee__item" data-i18n="marquee_8">Quality First</span>
         </div>
       </div>
     </div>
@@ -196,39 +166,39 @@
     <section class="section" id="location">
       <div class="container">
         <div class="section__header text-center">
-          <span class="section__label">Get in Touch</span>
-          <h2 class="section__title">Location & Contact</h2>
-          <p class="section__subtitle">Visit us or reach out anytime — we'd love to hear from you.</p>
+          <span class="section__label" data-i18n="location_label">Get in Touch</span>
+          <h2 class="section__title" data-i18n="location_title">Location & Contact</h2>
+          <p class="section__subtitle" data-i18n="location_subtitle">Visit us or reach out anytime — we'd love to hear from you.</p>
         </div>
         
         <div class="contact-grid">
           <div class="contact-card contact-card--info animate-on-scroll stagger-1">
-            <h3 class="contact-card__title">Contact Information</h3>
+            <h3 class="contact-card__title" data-i18n="location_info_title">Contact Information</h3>
             <div class="contact-card__content">
-              <strong>📍 Address</strong><br>
-              Cheikh Nadim El Jisr, Tripoli<br><br>
-              <strong>📞 Phone</strong><br>
+              <strong data-i18n="location_address">📍 Address</strong><br>
+              <span data-i18n="location_address_value">Cheikh Nadim El Jisr, Tripoli</span><br><br>
+              <strong data-i18n="location_phone">📞 Phone</strong><br>
               +961 71 026 035<br><br>
-              <strong>✉️ Email</strong><br>
+              <strong data-i18n="location_email">✉️ Email</strong><br>
               support@caffettino-group.it
             </div>
             <div class="contact-card__buttons">
-              <a href="mailto:support@caffettino-group.it" class="btn btn--primary">Email Us</a>
-              <a href="https://wa.me/96171026035?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn--whatsapp">
+              <a href="mailto:support@caffettino-group.it" class="btn btn--primary" data-i18n="location_btn_email">Email Us</a>
+              <a href="https://wa.me/96171026035?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn--whatsapp" data-i18n="location_btn_whatsapp">
                 Chat on WhatsApp
               </a>
             </div>
           </div>
           
           <div class="contact-card contact-card--hours animate-on-scroll stagger-2">
-            <h3 class="contact-card__title">Business Hours</h3>
+            <h3 class="contact-card__title" data-i18n="location_hours_title">Business Hours</h3>
             <div class="contact-card__content">
-              <strong>Monday – Friday</strong><br>
+              <strong data-i18n="location_weekdays">Monday – Friday</strong><br>
               08:30 – 18:30<br><br>
-              <strong>Saturday</strong><br>
+              <strong data-i18n="location_saturday">Saturday</strong><br>
               09:00 – 13:00<br><br>
-              <strong>Sunday & Holidays</strong><br>
-              Closed
+              <strong data-i18n="location_sunday">Sunday & Holidays</strong><br>
+              <span data-i18n="location_closed">Closed</span>
             </div>
           </div>
         </div>
@@ -236,27 +206,27 @@
     </section>
 
     <!-- Marquee between Location and About -->
-    <div class="marquee">
+    <div class="marquee" id="marquee-2">
       <div class="marquee__track">
         <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
+          <span class="marquee__item" data-i18n="marquee_1">Premium Coffee</span>
+          <span class="marquee__item" data-i18n="marquee_2">Authentic Italian Taste</span>
+          <span class="marquee__item" data-i18n="marquee_3">Fast Delivery</span>
+          <span class="marquee__item" data-i18n="marquee_4">Sustainable Sourcing</span>
+          <span class="marquee__item" data-i18n="marquee_5">Handcrafted Blends</span>
+          <span class="marquee__item" data-i18n="marquee_6">Fresh Roasts</span>
+          <span class="marquee__item" data-i18n="marquee_7">Expert Baristas</span>
+          <span class="marquee__item" data-i18n="marquee_8">Quality First</span>
         </div>
         <div class="marquee__content">
-          <span class="marquee__item">Premium Coffee</span>
-          <span class="marquee__item">Authentic Italian Taste</span>
-          <span class="marquee__item">Fast Delivery</span>
-          <span class="marquee__item">Sustainable Sourcing</span>
-          <span class="marquee__item">Handcrafted Blends</span>
-          <span class="marquee__item">Fresh Roasts</span>
-          <span class="marquee__item">Expert Baristas</span>
-          <span class="marquee__item">Quality First</span>
+          <span class="marquee__item" data-i18n="marquee_1">Premium Coffee</span>
+          <span class="marquee__item" data-i18n="marquee_2">Authentic Italian Taste</span>
+          <span class="marquee__item" data-i18n="marquee_3">Fast Delivery</span>
+          <span class="marquee__item" data-i18n="marquee_4">Sustainable Sourcing</span>
+          <span class="marquee__item" data-i18n="marquee_5">Handcrafted Blends</span>
+          <span class="marquee__item" data-i18n="marquee_6">Fresh Roasts</span>
+          <span class="marquee__item" data-i18n="marquee_7">Expert Baristas</span>
+          <span class="marquee__item" data-i18n="marquee_8">Quality First</span>
         </div>
       </div>
     </div>
@@ -267,24 +237,24 @@
     <section class="section section--alt" id="about">
       <div class="container">
         <div class="section__header text-center">
-          <span class="section__label">Our Story</span>
-          <h2 class="section__title">About Caffettino</h2>
-          <p class="section__subtitle">What drives us every day to bring you exceptional coffee.</p>
+          <span class="section__label" data-i18n="about_label">Our Story</span>
+          <h2 class="section__title" data-i18n="about_title">About Caffettino</h2>
+          <p class="section__subtitle" data-i18n="about_subtitle">What drives us every day to bring you exceptional coffee.</p>
         </div>
         
         <div class="about-grid">
           <div class="about-card animate-on-scroll stagger-1">
             <div class="about-card__icon">☕</div>
-            <h3 class="about-card__title">Who We Are</h3>
-            <p class="about-card__desc">
+            <h3 class="about-card__title" data-i18n="about_who_title">Who We Are</h3>
+            <p class="about-card__desc" data-i18n="about_who_desc">
               Caffettino is a premium coffee company dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual that deserves care and attention.
             </p>
           </div>
           
           <div class="about-card animate-on-scroll stagger-2">
             <div class="about-card__icon">🎯</div>
-            <h3 class="about-card__title">Our Mission</h3>
-            <p class="about-card__desc">
+            <h3 class="about-card__title" data-i18n="about_mission_title">Our Mission</h3>
+            <p class="about-card__desc" data-i18n="about_mission_desc">
               Our mission is to bring exceptional coffee experiences to homes and businesses while supporting ethical sourcing, fair trade practices, and environmental responsibility. Every cup matters.
             </p>
           </div>
@@ -299,9 +269,9 @@
       <div class="container">
         <div class="app-grid">
           <div class="app-content animate-on-scroll">
-            <span class="section__label">Download Now</span>
-            <h2 class="app-content__title">The Caffettino App</h2>
-            <p class="app-content__desc">
+            <span class="section__label" data-i18n="app_label">Download Now</span>
+            <h2 class="app-content__title" data-i18n="app_title">The Caffettino App</h2>
+            <p class="app-content__desc" data-i18n="app_desc">
               Browse products, place orders, track deliveries, and get exclusive deals — all in one beautifully designed app, available in English and Arabic.
             </p>
             <div class="app-content__buttons">
@@ -318,12 +288,12 @@
           
           <div class="app-visual animate-on-scroll stagger-2">
             <div class="app-features">
-              <p class="app-features__title">App Highlights</p>
+              <p class="app-features__title" data-i18n="app_highlights">App Highlights</p>
               <ul class="app-features__list">
-                <li>Fast browsing across categories and deals</li>
-                <li>Real-time order tracking and notifications</li>
-                <li>Secure payments and delivery management</li>
-                <li>Available in English and Arabic</li>
+                <li data-i18n="app_feature_1">Fast browsing across categories and deals</li>
+                <li data-i18n="app_feature_2">Real-time order tracking and notifications</li>
+                <li data-i18n="app_feature_3">Secure payments and delivery management</li>
+                <li data-i18n="app_feature_4">Available in English and Arabic</li>
               </ul>
             </div>
           </div>
@@ -344,13 +314,13 @@
         </div>
         
         <nav class="footer__links" aria-label="Footer navigation">
-          <a href="./privacy.html">Privacy Policy</a>
-          <a href="mailto:support@caffettino-group.it">Contact</a>
+          <a href="./privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="mailto:support@caffettino-group.it" data-i18n="footer_contact">Contact</a>
           <a href="https://wa.me/96171026035" target="_blank" rel="noopener">WhatsApp</a>
         </nav>
       </div>
       
-      <p class="footer__copy">© <span id="year"></span> Caffettino. All rights reserved.</p>
+      <p class="footer__copy"><span data-i18n="footer_copy">© <span id="year"></span> Caffettino. All rights reserved.</span></p>
     </div>
   </footer>
 
@@ -412,6 +382,9 @@
         }
       });
     });
+
+    // Initialize language and render products
+    initLanguage();
   </script>
 </body>
 </html>

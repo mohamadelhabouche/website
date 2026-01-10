@@ -43,6 +43,73 @@ body {
   overflow-x: hidden;
 }
 
+/* RTL Support - Arabic */
+body.rtl {
+  font-family: 'Tajawal', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  direction: rtl;
+}
+
+/* ============================================
+   Language Toggle Switch (Modern Sliding Pill)
+   ============================================ */
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  direction: ltr; /* Always keep EN on left, AR on right */
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.lang-toggle__label {
+  position: relative;
+  z-index: 3;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  user-select: none;
+  color: var(--text-muted);
+}
+
+.lang-toggle__label:hover {
+  opacity: 0.85;
+}
+
+/* Sliding indicator background */
+.lang-toggle__indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background: var(--primary);
+  border-radius: 50px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+body.rtl .lang-toggle__indicator {
+  transform: translateX(100%);
+}
+
+/* Hide the checkbox - we use labels for clicking */
+.lang-toggle__switch {
+  display: none;
+}
+
 /* ============================================
    Utility
    ============================================ */
@@ -239,7 +306,7 @@ body {
 .hero__title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.5;
   margin: 0 0 20px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   -webkit-background-clip: text;
@@ -952,3 +1019,78 @@ body {
 .marquee:hover .marquee__track {
   animation-play-state: paused;
 }
+
+/* ============================================
+   RTL (Arabic) Specific Styles
+   ============================================ */
+body.rtl .text-center {
+  text-align: center;
+}
+
+body.rtl .hero__buttons {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+body.rtl .hero__badge {
+  flex-direction: row-reverse;
+}
+
+body.rtl .features-grid,
+body.rtl .products-grid,
+body.rtl .about-grid,
+body.rtl .contact-grid,
+body.rtl .app-grid {
+  direction: rtl;
+}
+
+body.rtl .app-features__list {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+body.rtl .app-features__list li::before {
+  right: -20px;
+  left: auto;
+}
+
+body.rtl .btn svg {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+body.rtl .footer__links {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer__inner {
+  flex-direction: row-reverse;
+}
+
+/* RTL Marquee - scroll opposite direction */
+body.rtl .marquee__track {
+  animation-name: marquee-scroll-rtl;
+}
+
+@keyframes marquee-scroll-rtl {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* RTL responsive adjustments */
+@media (max-width: 768px) {
+  body.rtl .lang-switch {
+    right: auto;
+    left: 15px;
+  }
+  
+  body.rtl .hero__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
