@@ -391,9 +391,9 @@ function applyTranslations(lang) {
   currentLang = lang;
   localStorage.setItem('caffettino_lang', lang);
   
-  // Update HTML lang and dir attributes
+  // Update HTML lang attribute (keep dir as ltr to prevent mobile viewport issues)
   document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  // Don't change document.documentElement.dir - it causes mobile viewport shift
   document.body.classList.toggle('rtl', lang === 'ar');
   
   // Update all elements with data-i18n attribute
