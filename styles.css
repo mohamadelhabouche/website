@@ -147,7 +147,7 @@ body.rtl .lang-toggle__indicator {
 .section {
   padding: 100px 0;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .section--alt { background: var(--bg-alt); }
@@ -256,7 +256,7 @@ body.rtl .lang-toggle__indicator {
   border-radius: 999px;
   transition: background var(--transition), transform var(--transition), font-size 0.4s ease, padding 0.4s ease;
   white-space: nowrap;
-  min-width: 80px;
+  width: 90px;
   text-align: center;
 }
 .nav-link:hover {
@@ -930,7 +930,7 @@ body.rtl .lang-toggle__indicator {
   }
   .nav-link {
     padding: 8px 10px;
-    font-size: 12px;
+    font-size: 18px;
   }
   .nav-logo {
     width: 94px;
@@ -1001,6 +1001,7 @@ body.rtl .lang-toggle__indicator {
   padding: 16px 0;
   overflow: hidden;
   position: relative;
+  direction: ltr; /* Keep marquee LTR even in RTL mode for smooth animation */
 }
 
 .marquee__track {
@@ -1091,20 +1092,6 @@ body.rtl .footer__links {
 
 body.rtl .footer__inner {
   flex-direction: row-reverse;
-}
-
-/* RTL Marquee - scroll opposite direction */
-body.rtl .marquee__track {
-  animation-name: marquee-scroll-rtl;
-}
-
-@keyframes marquee-scroll-rtl {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 /* RTL responsive adjustments */
