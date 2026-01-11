@@ -929,7 +929,7 @@ body.rtl .lang-toggle__indicator {
     transform-origin: center;
   }
   .nav-link {
-    padding: 8px 10px;
+    padding: 8px 12px;
     font-size: 18px;
   }
   .nav-logo {
