@@ -56,10 +56,11 @@
     <section class="toggle-section">
       <div class="container">
         <div class="lang-toggle-wrapper">
-          <div class="lang-toggle" id="lang-toggle">
-            <div class="lang-toggle__indicator"></div>
-            <span class="lang-toggle__label lang-toggle__label--en" onclick="setLanguage('en')">EN</span>
-            <span class="lang-toggle__label lang-toggle__label--ar" onclick="setLanguage('ar')">AR</span>
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" aria-label="Language toggle">
+            <label for="language-toggle"></label>
+            <span class="on">AR</span>
+            <span class="off">EN</span>
           </div>
         </div>
       </div>

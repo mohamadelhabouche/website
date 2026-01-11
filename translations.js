@@ -386,6 +386,12 @@ const productsData = {
 // Current language
 let currentLang = localStorage.getItem('caffettino_lang') || 'en';
 
+function syncLanguageToggleUI(lang) {
+  const toggle = document.getElementById('language-toggle');
+  if (!toggle) return;
+  toggle.checked = lang === 'en';
+}
+
 // Apply translations
 function applyTranslations(lang) {
   currentLang = lang;
@@ -395,6 +401,9 @@ function applyTranslations(lang) {
   document.documentElement.lang = lang;
   // Don't change document.documentElement.dir - it causes mobile viewport shift
   document.body.classList.toggle('rtl', lang === 'ar');
+
+  // Keep the language toggle switch synced (checked = EN)
+  syncLanguageToggleUI(lang);
   
   // Update all elements with data-i18n attribute
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -445,5 +454,13 @@ function toggleLanguage() {
 
 // Initialize language
 function initLanguage() {
+  const toggle = document.getElementById('language-toggle');
+  if (toggle && !toggle.dataset.bound) {
+    toggle.addEventListener('change', () => {
+      applyTranslations(toggle.checked ? 'en' : 'ar');
+    });
+    toggle.dataset.bound = 'true';
+  }
+
   applyTranslations(currentLang);
 }

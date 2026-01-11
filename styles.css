@@ -75,62 +75,100 @@ body.rtl {
 }
 
 /* ============================================
-   Language Toggle Switch (Modern Sliding Pill)
+   Language Toggle Switch (Checkbox)
    ============================================ */
-.lang-toggle {
+.switch {
   position: relative;
-  display: inline-flex;
-  direction: ltr; /* Always keep EN on left, AR on right */
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 4px;
-  border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: 0 5px;
+  height: 35px;
 }
 
-.lang-toggle__label {
-  position: relative;
-  z-index: 3;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 8px 16px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  user-select: none;
-  color: var(--text-muted);
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-}
-
-.lang-toggle__label:hover {
-  opacity: 0.85;
-}
-
-/* Sliding indicator background */
-.lang-toggle__indicator {
+.switch > span {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+}
+
+.switch > span.on {
+  left: 0;
+  color: var(--accent);
+}
+
+.switch > span.off {
+  right: 0;
+  color: var(--white);
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: var(--accent);
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: var(--white);
+}
+
+.check-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: var(--primary);
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--primary);
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat + label:after {
   top: 4px;
   left: 4px;
-  width: calc(50% - 4px);
-  height: calc(100% - 8px);
-  background: var(--primary);
-  border-radius: 50px;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
-  pointer-events: none; /* Allow clicks to pass through */
+  bottom: 4px;
+  width: 48px;
+  background-color: var(--white);
+  border-radius: 52px;
+  transition: margin 0.2s;
 }
 
-body.rtl .lang-toggle__indicator {
-  transform: translateX(100%);
-}
-
-/* Hide the checkbox - we use labels for clicking */
-.lang-toggle__switch {
-  display: none;
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 41px;
 }
 
 /* ============================================
