@@ -247,45 +247,6 @@ const translations = {
     footer_whatsapp: "واتساب",
     footer_copy: "كافيتينو. جميع الحقوق محفوظة.",
 
-    contact_address_value: "الشيخ نديم الجسر، طرابلس",
-    contact_phone: "الهاتف",
-    contact_email: "البريد الإلكتروني",
-    contact_btn_email: "راسلنا",
-    contact_btn_whatsapp: "تحدث على واتساب",
-    hours_title: "ساعات العمل",
-    hours_weekdays: "الإثنين – الجمعة",
-    hours_saturday: "السبت",
-    hours_sunday: "الأحد والعطلات",
-    hours_closed: "مغلق",
-
-    // About
-    about_label: "قصتنا",
-    about_title: "عن كافيتينو",
-    about_subtitle: "ما يدفعنا كل يوم لتقديم قهوة استثنائية لك.",
-    about_who_title: "من نحن",
-    about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها طقس يومي يستحق العناية والاهتمام.",
-    about_mission_title: "مهمتنا",
-    about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات مع دعم المصادر الأخلاقية وممارسات التجارة العادلة والمسؤولية البيئية. كل فنجان مهم.",
-
-    // App
-    app_label: "حمّل الآن",
-    app_title: "تطبيق كافيتينو",
-    app_desc: "تصفح المنتجات، اطلب، تتبع التوصيل، واحصل على عروض حصرية — كل ذلك في تطبيق واحد جميل التصميم، متوفر بالعربية والإنجليزية.",
-    app_btn_appstore: "App Store",
-    app_btn_playstore: "Google Play",
-    app_features_title: "مميزات التطبيق",
-    app_feature1: "تصفح سريع للفئات والعروض",
-    app_feature2: "تتبع الطلبات والإشعارات لحظياً",
-    app_feature3: "دفع آمن وإدارة التوصيل",
-    app_feature4: "متوفر بالعربية والإنجليزية",
-
-    // Footer
-    footer_name: "كافيتينو",
-    footer_privacy: "سياسة الخصوصية",
-    footer_contact: "تواصل",
-    footer_whatsapp: "واتساب",
-    footer_copy: "كافيتينو. جميع الحقوق محفوظة.",
-
     // Privacy Policy Page
     privacy_title: "سياسة الخصوصية",
     privacy_date: "تاريخ السريان: 26 ديسمبر 2025 · آخر تحديث: 26 ديسمبر 2025",
