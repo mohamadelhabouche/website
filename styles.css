@@ -928,6 +928,21 @@ input.check-toggle-round-flat:checked + label:after {
   color: var(--white);
 }
 
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.footer__social a {
+  color: rgba(255,255,255,0.5);
+  transition: color var(--transition), transform var(--transition);
+}
+.footer__social a:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 .footer__copy {
   width: 100%;
   text-align: center;
