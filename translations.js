@@ -8,14 +8,14 @@ const translations = {
     nav_location: "Location",
     nav_about: "About",
     nav_app: "App",
-    
+
     // Hero
     hero_badge: "Premium Coffee Solutions",
     hero_title: "Fall in Love with Coffee in Blissful Delight",
     hero_subtitle: "Caffettino is dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual.",
     hero_btn_products: "Explore Products",
     hero_btn_app: "Get the App",
-    
+
     // Why Choose Us
     whyus_label: "Why Choose Us",
     whyus_title: "The Caffettino Difference",
@@ -26,7 +26,7 @@ const translations = {
     whyus_f2_desc: "Order through our app and receive your coffee within days, freshly packed just for you.",
     whyus_f3_title: "Dedicated Support",
     whyus_f3_desc: "Questions? Our team is ready to help via WhatsApp, email, or phone.",
-    
+
     // Products
     products_label: "What We Offer",
     products_title: "Our Products",
@@ -37,7 +37,7 @@ const translations = {
     product2_desc: "Compact and stylish espresso machine, easy to operate with consistent creamy results.",
     product3_name: "Capsules and Pods",
     product3_desc: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing.",
-    
+
     // Marquee
     marquee_1: "Premium Coffee",
     marquee_2: "Authentic Italian Taste",
@@ -47,7 +47,7 @@ const translations = {
     marquee_6: "Fresh Roasts",
     marquee_7: "Expert Baristas",
     marquee_8: "Quality First",
-    
+
     // Location
     location_label: "Get in Touch",
     location_title: "Location & Contact",
@@ -64,7 +64,7 @@ const translations = {
     location_saturday: "Saturday",
     location_sunday: "Sunday & Holidays",
     location_closed: "Closed",
-    
+
     // About
     about_label: "Our Story",
     about_title: "About Caffettino",
@@ -73,7 +73,7 @@ const translations = {
     about_who_desc: "Caffettino is a premium coffee company dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual that deserves care and attention.",
     about_mission_title: "Our Mission",
     about_mission_desc: "Our mission is to bring exceptional coffee experiences to homes and businesses while supporting ethical sourcing, fair trade practices, and environmental responsibility. Every cup matters.",
-    
+
     // App
     app_label: "Download Now",
     app_title: "The Caffettino App",
@@ -85,12 +85,14 @@ const translations = {
     app_feature_2: "Real-time order tracking and notifications",
     app_feature_3: "Secure payments and delivery management",
     app_feature_4: "Available in English and Arabic",
-    
+
     // Footer
+    footer_name: "Caffettino",
     footer_privacy: "Privacy Policy",
     footer_contact: "Contact",
+    footer_whatsapp: "WhatsApp",
     footer_copy: "Caffettino. All rights reserved.",
-    
+
     // Privacy Policy Page
     privacy_title: "Privacy Policy",
     privacy_date: "Effective Date: December 26, 2025 · Last Updated: December 26, 2025",
@@ -149,25 +151,25 @@ const translations = {
     privacy_contact_phone: "Phone:",
     privacy_contact_email: "Email:",
     privacy_back: "← Back to Home",
-    
+
     // Language switcher
     lang_switch: "العربية"
   },
-  
+
   ar: {
     // Navigation
     nav_products: "المنتجات",
     nav_location: "الموقع",
     nav_about: "من نحن",
     nav_app: "التطبيق",
-    
+
     // Hero
     hero_badge: "حلول القهوة الفاخرة",
     hero_title: "اعشق القهوة بسعادة لا توصف",
     hero_subtitle: "كافيتينو ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها عادة يومية.",
     hero_btn_products: "استكشف المنتجات",
     hero_btn_app: "حمّل التطبيق",
-    
+
     // Why Choose Us
     whyus_label: "لماذا نحن",
     whyus_title: "ما يميز كافيتينو",
@@ -178,7 +180,7 @@ const translations = {
     whyus_f2_desc: "اطلب عبر تطبيقنا واستلم قهوتك خلال أيام، معبأة طازجة خصيصاً لك.",
     whyus_f3_title: "دعم متخصص",
     whyus_f3_desc: "أسئلة؟ فريقنا جاهز للمساعدة عبر واتساب أو البريد الإلكتروني أو الهاتف.",
-    
+
     // Products
     products_label: "ما نقدمه",
     products_title: "منتجاتنا",
@@ -189,7 +191,7 @@ const translations = {
     product2_desc: "آلة إسبريسو أنيقة ومدمجة، سهلة الاستخدام مع نتائج كريمية متسقة.",
     product3_name: "كبسولات وأقراص",
     product3_desc: "تجمع بين المذاق والراحة للحصول على إسبريسو عالي الجودة في المنزل أو المكتب، تضمن تخميراً دقيقاً ومتسقاً.",
-    
+
     // Marquee
     marquee_1: "قهوة فاخرة",
     marquee_2: "مذاق إيطالي أصيل",
@@ -199,7 +201,7 @@ const translations = {
     marquee_6: "تحميص طازج",
     marquee_7: "باريستا خبراء",
     marquee_8: "الجودة أولاً",
-    
+
     // Location
     location_label: "تواصل معنا",
     location_title: "الموقع والتواصل",
@@ -216,7 +218,7 @@ const translations = {
     location_saturday: "السبت",
     location_sunday: "الأحد والعطلات",
     location_closed: "مغلق",
-    
+
     // About
     about_label: "قصتنا",
     about_title: "عن كافيتينو",
@@ -225,7 +227,7 @@ const translations = {
     about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها طقس يومي يستحق العناية والاهتمام.",
     about_mission_title: "مهمتنا",
     about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات مع دعم المصادر الأخلاقية وممارسات التجارة العادلة والمسؤولية البيئية. كل فنجان مهم.",
-    
+
     // App
     app_label: "حمّل الآن",
     app_title: "تطبيق كافيتينو",
@@ -237,12 +239,14 @@ const translations = {
     app_feature_2: "تتبع الطلبات والإشعارات لحظياً",
     app_feature_3: "دفع آمن وإدارة التوصيل",
     app_feature_4: "متوفر بالعربية والإنجليزية",
-    
+
     // Footer
+    footer_name: "كافيتينو",
     footer_privacy: "سياسة الخصوصية",
     footer_contact: "تواصل",
+    footer_whatsapp: "واتساب",
     footer_copy: "كافيتينو. جميع الحقوق محفوظة.",
-    
+
     contact_address_value: "الشيخ نديم الجسر، طرابلس",
     contact_phone: "الهاتف",
     contact_email: "البريد الإلكتروني",
@@ -253,7 +257,7 @@ const translations = {
     hours_saturday: "السبت",
     hours_sunday: "الأحد والعطلات",
     hours_closed: "مغلق",
-    
+
     // About
     about_label: "قصتنا",
     about_title: "عن كافيتينو",
@@ -262,7 +266,7 @@ const translations = {
     about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها طقس يومي يستحق العناية والاهتمام.",
     about_mission_title: "مهمتنا",
     about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات مع دعم المصادر الأخلاقية وممارسات التجارة العادلة والمسؤولية البيئية. كل فنجان مهم.",
-    
+
     // App
     app_label: "حمّل الآن",
     app_title: "تطبيق كافيتينو",
@@ -274,13 +278,14 @@ const translations = {
     app_feature2: "تتبع الطلبات والإشعارات لحظياً",
     app_feature3: "دفع آمن وإدارة التوصيل",
     app_feature4: "متوفر بالعربية والإنجليزية",
-    
+
     // Footer
+    footer_name: "كافيتينو",
     footer_privacy: "سياسة الخصوصية",
     footer_contact: "تواصل",
     footer_whatsapp: "واتساب",
     footer_copy: "كافيتينو. جميع الحقوق محفوظة.",
-    
+
     // Privacy Policy Page
     privacy_title: "سياسة الخصوصية",
     privacy_date: "تاريخ السريان: 26 ديسمبر 2025 · آخر تحديث: 26 ديسمبر 2025",
@@ -339,7 +344,7 @@ const translations = {
     privacy_contact_phone: "الهاتف:",
     privacy_contact_email: "البريد الإلكتروني:",
     privacy_back: "→ العودة للرئيسية",
-    
+
     // Language switcher
     lang_switch: "English"
   }
@@ -396,7 +401,7 @@ function syncLanguageToggleUI(lang) {
 function applyTranslations(lang) {
   currentLang = lang;
   localStorage.setItem('caffettino_lang', lang);
-  
+
   // Update HTML lang attribute (keep dir as ltr to prevent mobile viewport issues)
   document.documentElement.lang = lang;
   // Don't change document.documentElement.dir - it causes mobile viewport shift
@@ -404,7 +409,7 @@ function applyTranslations(lang) {
 
   // Keep the language toggle switch synced (checked = EN)
   syncLanguageToggleUI(lang);
-  
+
   // Update all elements with data-i18n attribute
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -412,7 +417,7 @@ function applyTranslations(lang) {
       el.textContent = translations[lang][key];
     }
   });
-  
+
   // Re-render products
   renderProducts(lang);
 }
@@ -421,7 +426,7 @@ function applyTranslations(lang) {
 function renderProducts(lang) {
   const grid = document.getElementById('products-grid');
   if (!grid) return;
-  
+
   const products = productsData[lang];
   grid.innerHTML = products.map((product, index) => `
     <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
@@ -434,7 +439,7 @@ function renderProducts(lang) {
       </div>
     </div>
   `).join('');
-  
+
   // Re-observe for animations
   document.querySelectorAll('.product-card.animate-on-scroll').forEach(el => {
     el.classList.add('visible');
