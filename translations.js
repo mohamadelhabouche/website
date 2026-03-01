@@ -12,7 +12,7 @@ const translations = {
     // Hero
     hero_badge: "Premium Coffee Solutions",
     hero_title: "Fall in Love with Coffee in Blissful Delight",
-    hero_subtitle: "Caffettino is dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual.",
+    hero_subtitle: "Caffettino is dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is much more than a drink — it's sharing, tradition, and passion.",
     hero_btn_products: "Explore Products",
     hero_btn_app: "Get the App",
 
@@ -20,10 +20,10 @@ const translations = {
     whyus_label: "Why Choose Us",
     whyus_title: "The Caffettino Difference",
     whyus_subtitle: "We're committed to quality, sustainability, and exceptional service.",
-    whyus_f1_title: "Ethically Sourced",
-    whyus_f1_desc: "All our beans come from fair trade farms that prioritize environmental responsibility.",
+    whyus_f1_title: "Trusted Source",
+    whyus_f1_desc: "We import coffee from a specialized Italian company with long-standing expertise in the field, committed to the highest standards in selecting, roasting, and packaging the beans, ensuring an authentic and consistent taste every time.",
     whyus_f2_title: "Fast Delivery",
-    whyus_f2_desc: "Order through our app and receive your coffee within days, freshly packed just for you.",
+    whyus_f2_desc: "Order through our app and receive your coffee within a few days, securely packaged to preserve quality and flavor until it reaches you.",
     whyus_f3_title: "Dedicated Support",
     whyus_f3_desc: "Questions? Our team is ready to help via WhatsApp, email, or phone.",
 
@@ -40,13 +40,13 @@ const translations = {
 
     // Marquee
     marquee_1: "Premium Coffee",
-    marquee_2: "Authentic Italian Taste",
-    marquee_3: "Fast Delivery",
-    marquee_4: "Sustainable Sourcing",
-    marquee_5: "Handcrafted Blends",
-    marquee_6: "Fresh Roasts",
-    marquee_7: "Expert Baristas",
-    marquee_8: "Quality First",
+  marquee_2: "Authentic Italian Taste",
+  marquee_3: "Fast & Reliable Delivery",
+  marquee_4: "Trusted Italian Source",
+  marquee_5: "Exclusive Signature Blends",
+  marquee_6: "Over 30 Years of Expertise",
+  marquee_7: "Consistent Rich Flavor",
+  marquee_8: "Exceptional Quality",
 
     // Location
     location_label: "Get in Touch",
@@ -60,7 +60,7 @@ const translations = {
     location_btn_email: "Email Us",
     location_btn_whatsapp: "Chat on WhatsApp",
     location_hours_title: "Business Hours",
-    location_weekdays: "Monday – Friday",
+    location_weekdays: "Monday - Friday",
     location_saturday: "Saturday",
     location_sunday: "Sunday & Holidays",
     location_closed: "Closed",
@@ -72,7 +72,7 @@ const translations = {
     about_who_title: "Who We Are",
     about_who_desc: "Caffettino is a premium coffee company dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual that deserves care and attention.",
     about_mission_title: "Our Mission",
-    about_mission_desc: "Our mission is to bring exceptional coffee experiences to homes and businesses while supporting ethical sourcing, fair trade practices, and environmental responsibility. Every cup matters.",
+    about_mission_desc: "Our mission is to deliver exceptional coffee experiences to homes and businesses through premium Italian craftsmanship and uncompromising quality. We are committed to consistency, reliability, and excellence in every cup.",
 
     // App
     app_label: "Download Now",
@@ -89,7 +89,7 @@ const translations = {
     // Footer
     footer_name: "Caffettino",
     footer_privacy: "Privacy Policy",
-    footer_contact: "Contact",
+    footer_contact: "Contact Us via Email",
     footer_whatsapp: "WhatsApp",
     footer_copy: "Caffettino. All rights reserved.",
 
@@ -166,7 +166,7 @@ const translations = {
     // Hero
     hero_badge: "حلول القهوة الفاخرة",
     hero_title: "اعشق القهوة بسعادة لا توصف",
-    hero_subtitle: "كافيتينو ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها عادة يومية.",
+    hero_subtitle: "كافيتينو ملتزمة بتقديم منتجات قهوة عالية الجودة مستوردة من أهم الشركات الإيطالية. نؤمن بأن القهوة أكثر من مجرد مشروب، إنها مشاركة وتقاليد وشغف.",
     hero_btn_products: "استكشف المنتجات",
     hero_btn_app: "حمّل التطبيق",
 
@@ -174,10 +174,10 @@ const translations = {
     whyus_label: "لماذا نحن",
     whyus_title: "ما يميز كافيتينو",
     whyus_subtitle: "نحن ملتزمون بالجودة والاستدامة والخدمة الاستثنائية.",
-    whyus_f1_title: "مصادر أخلاقية",
-    whyus_f1_desc: "جميع حبوبنا تأتي من مزارع التجارة العادلة التي تعطي الأولوية للمسؤولية البيئية.",
+    whyus_f1_title: "مصادر موثوقة",
+    whyus_f1_desc: "نستورد القهوة من شركة إيطالية متخصصة ذات خبرة طويلة في هذا المجال، تلتزم بأعلى معايير الجودة في اختيار البن وتحميصه وتغليفه، لضمان مذاق أصيل وثابت في كل مرة.",
     whyus_f2_title: "توصيل سريع",
-    whyus_f2_desc: "اطلب عبر تطبيقنا واستلم قهوتك خلال أيام، معبأة طازجة خصيصاً لك.",
+    whyus_f2_desc: "اطلب منتجاتك بكل سهولة عبر تطبيقنا، واستلم قهوتك خلال أيام قليلة، مع تغليف آمن يضمن الحفاظ على الجودة والنكهة حتى وصولها إليك.",
     whyus_f3_title: "دعم متخصص",
     whyus_f3_desc: "أسئلة؟ فريقنا جاهز للمساعدة عبر واتساب أو البريد الإلكتروني أو الهاتف.",
 
@@ -195,12 +195,12 @@ const translations = {
     // Marquee
     marquee_1: "قهوة فاخرة",
     marquee_2: "مذاق إيطالي أصيل",
-    marquee_3: "توصيل سريع",
-    marquee_4: "مصادر مستدامة",
-    marquee_5: "خلطات مصنوعة يدوياً",
-    marquee_6: "تحميص طازج",
-    marquee_7: "باريستا خبراء",
-    marquee_8: "الجودة أولاً",
+    marquee_3: "توصيل سريع وموثوق",
+    marquee_4: "مصادر إيطالية موثوقة",
+    marquee_5: "خلطات توقيع حصرية",
+    marquee_6: "أكثر من 30 سنة من الخبرة",
+    marquee_7: "نكهة غنية ومتسقة",
+    marquee_8: "جودة استثنائية",
 
     // Location
     location_label: "تواصل معنا",
@@ -214,7 +214,7 @@ const translations = {
     location_btn_email: "راسلنا",
     location_btn_whatsapp: "تحدث على واتساب",
     location_hours_title: "ساعات العمل",
-    location_weekdays: "الإثنين – الجمعة",
+    location_weekdays: "الإثنين - الجمعة",
     location_saturday: "السبت",
     location_sunday: "الأحد والعطلات",
     location_closed: "مغلق",
@@ -224,9 +224,9 @@ const translations = {
     about_title: "عن كافيتينو",
     about_subtitle: "ما يدفعنا كل يوم لتقديم قهوة استثنائية لك.",
     about_who_title: "من نحن",
-    about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة من مزارع مستدامة حول العالم. نؤمن بأن القهوة ليست مجرد مشروب — إنها طقس يومي يستحق العناية والاهتمام.",
+    about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة. نؤمن بأن القهوة ليست مجرد مشروب — إنها عادة يومية يستحق العناية والاهتمام.",
     about_mission_title: "مهمتنا",
-    about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات مع دعم المصادر الأخلاقية وممارسات التجارة العادلة والمسؤولية البيئية. كل فنجان مهم.",
+    about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات من خلال الحرفية الإيطالية الفاخرة والجودة التي لا تقبل المساومة. نحن ملتزمون بالاتساق والموثوقية والتميز في كل فنجان.",
 
     // App
     app_label: "حمّل الآن",
@@ -243,7 +243,7 @@ const translations = {
     // Footer
     footer_name: "كافيتينو",
     footer_privacy: "سياسة الخصوصية",
-    footer_contact: "تواصل",
+    footer_contact: "تواصل عبر البريد الإلكتروني",
     footer_whatsapp: "واتساب",
     footer_copy: "كافيتينو. جميع الحقوق محفوظة.",
 
