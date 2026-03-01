@@ -37,6 +37,8 @@ const translations = {
     product2_desc: "Compact and stylish espresso machine, easy to operate with consistent creamy results.",
     product3_name: "Capsules and Pods",
     product3_desc: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing.",
+    product4_name: "Ground Coffee",
+    product4_desc: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for Turkish coffee.",
 
     // Marquee
     marquee_1: "Premium Coffee",
@@ -191,6 +193,8 @@ const translations = {
     product2_desc: "آلة إسبريسو أنيقة ومدمجة، سهلة الاستخدام مع نتائج كريمية متسقة.",
     product3_name: "كبسولات وأقراص",
     product3_desc: "تجمع بين المذاق والراحة للحصول على إسبريسو عالي الجودة في المنزل أو المكتب، تضمن تخميراً دقيقاً ومتسقاً.",
+    product4_name: "قهوة مطحونة",
+    product4_desc: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للقهوة التركية.",
 
     // Marquee
     marquee_1: "قهوة فاخرة",
@@ -315,36 +319,46 @@ const translations = {
 const productsData = {
   en: [
     {
-      image: "https://ik.imagekit.io/caffettino/grano.png",
+      image: "./assets/grano.png",
       name: "Espresso Coffee Beans",
       description: "The ideal choice for anyone who wants to grind on-demand and obtain maximum freshness and aroma"
     },
     {
-      image: "https://ik.imagekit.io/caffettino/macchinetta.png",
+      image: "./assets/macchinetta.png",
       name: "Espresso Machine",
       description: "Compact and stylish espresso machine, easy to operate with consistent creamy results."
     },
     {
-      image: "https://ik.imagekit.io/caffettino/cialde.png",
+      image: "./assets/cialde.png",
       name: "Capsules and Pods",
       description: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing."
+    },
+    {
+      image: "./assets/ground.png",
+      name: "Ground Coffee",
+      description: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for drip, moka pot, or French press."
     }
   ],
   ar: [
     {
-      image: "https://ik.imagekit.io/caffettino/grano.png",
+      image: "./assets/grano.png",
       name: "حبوب قهوة إسبريسو",
       description: "الخيار المثالي لمن يريد الطحن عند الطلب والحصول على أقصى درجات النضارة والرائحة"
     },
     {
-      image: "https://ik.imagekit.io/caffettino/macchinetta.png",
+      image: "./assets/macchinetta.png",
       name: "آلة إسبريسو",
       description: "آلة إسبريسو أنيقة ومدمجة، سهلة الاستخدام مع نتائج كريمية متسقة."
     },
     {
-      image: "https://ik.imagekit.io/caffettino/cialde.png",
+      image: "./assets/cialde.png",
       name: "كبسولات وأقراص",
       description: "تجمع بين المذاق والراحة للحصول على إسبريسو عالي الجودة في المنزل أو المكتب، تضمن تخميراً دقيقاً ومتسقاً."
+    },
+    {
+      image: "./assets/ground.png",
+      name: "قهوة مطحونة",
+      description: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للتقطير أو الموكا أو الفرنش بريس."
     }
   ]
 };

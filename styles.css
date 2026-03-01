@@ -702,7 +702,7 @@ input.check-toggle-round-flat:checked+label:after {
    ============================================ */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
@@ -1166,6 +1166,10 @@ input.check-toggle-round-flat:checked+label:after {
 
   .contact-grid,
   .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
     grid-template-columns: 1fr;
   }
 
