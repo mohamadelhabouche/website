@@ -77,8 +77,9 @@ const translations = {
     about_mission_desc: "Our mission is to deliver exceptional coffee experiences to homes and businesses through premium Italian craftsmanship and uncompromising quality. We are committed to consistency, reliability, and excellence in every cup.",
 
     // App
-    app_label: "Download Now",
+    app_label: "Coming Soon",
     app_title: "The Caffettino App",
+    coming_soon: "The app is coming soon! Stay tuned.",
     app_desc: "Browse products, place orders, track deliveries, and get exclusive deals — all in one beautifully designed app, available in English and Arabic.",
     app_btn_appstore: "App Store",
     app_btn_playstore: "Google Play",
@@ -233,8 +234,9 @@ const translations = {
     about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات من خلال الحرفية الإيطالية الفاخرة والجودة التي لا تقبل المساومة. نحن ملتزمون بالاتساق والموثوقية والتميز في كل فنجان.",
 
     // App
-    app_label: "حمّل الآن",
+    app_label: "قريبًا",
     app_title: "تطبيق كافيتينو",
+    coming_soon: "التطبيق قريبًا! ترقبوا.",
     app_desc: "تصفح المنتجات، اطلب، تتبع التوصيل، واحصل على عروض حصرية — كل ذلك في تطبيق واحد جميل التصميم، متوفر بالعربية والإنجليزية.",
     app_btn_appstore: "App Store",
     app_btn_playstore: "Google Play",
