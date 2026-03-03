@@ -338,7 +338,7 @@ const productsData = {
     {
       image: "./assets/ground.png",
       name: "Ground Coffee",
-      description: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for drip, moka pot, or French press."
+      description: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for drip, moka pot, French press or turkish coffee."
     }
   ],
   ar: [
@@ -360,7 +360,7 @@ const productsData = {
     {
       image: "./assets/ground.png",
       name: "قهوة مطحونة",
-      description: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للتقطير أو الموكا أو الفرنش بريس."
+      description: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للتقطير، الموكا، الفرنش بريس أو القهوة التركية."
     }
   ]
 };
