@@ -881,6 +881,22 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 /* ============================================
+   Map
+   ============================================ */
+.map-wrap {
+  margin-top: 32px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 300px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.map-wrap iframe {
+  display: block;
+}
+
+/* ============================================
    About
    ============================================ */
 .about-grid {
