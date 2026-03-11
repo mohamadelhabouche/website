@@ -39,7 +39,22 @@ const translations = {
     product3_desc: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing.",
     product4_name: "Ground Coffee",
     product4_desc: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for Turkish coffee.",
-
+    cat_coffee_beans: "Coffee Beans",
+    cat_ground_coffee: "Ground Coffee",
+    cat_coffee_capsules: "Capsules & Pods",
+    cat_capsule_machines: "Capsule Machines",
+    cat_espresso_machines: "Espresso Machines",
+    cat_grinding_machines: "Grinding Machines",
+    cat_cold_cream_dispenser: "Cold Cream Dispenser",
+    cat_accessories: "Accessories",
+    cat_coffee_beans_desc: "Whole bean coffee for freshly ground perfection — available in a variety of blends and roast profiles.",
+    cat_ground_coffee_desc: "Pre-ground and ready to brew — ideal for Turkish coffee, moka pot, drip, and French press.",
+    cat_coffee_capsules_desc: "Quick and convenient single-serve capsules and pods for a consistent espresso every time.",
+    cat_capsule_machines_desc: "Capsule machines designed for ease of use and creamy results, for home, office, or professional settings.",
+    cat_espresso_machines_desc: "Espresso machines designed for precision and quality, suitable for professional use.",
+    cat_grinding_machines_desc: "Grinding machines for perfect coffee grounds, ensuring optimal flavor extraction.",
+    cat_cold_cream_dispenser_desc: "Cold cream dispensers for creating smooth and creamy coffee beverages.",
+    cat_accessories_desc: "Essential coffee accessories to complement and elevate your brewing experience.",
     // Marquee
     marquee_1: "Premium Coffee",
   marquee_2: "Authentic Italian Taste",
@@ -196,6 +211,22 @@ const translations = {
     product3_desc: "تجمع بين المذاق والراحة للحصول على إسبريسو عالي الجودة في المنزل أو المكتب، تضمن تخميراً دقيقاً ومتسقاً.",
     product4_name: "قهوة مطحونة",
     product4_desc: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للقهوة التركية.",
+    cat_coffee_beans: "حبوب القهوة",
+    cat_ground_coffee: "قهوة مطحونة",
+    cat_coffee_capsules: "كبسولات وأقراص",
+    cat_capsule_machines: "آلات الكبسولات",
+    cat_espresso_machines: "آلات الإسبريسو",
+    cat_grinding_machines: "آلات الطحن",
+    cat_cold_cream_dispenser: "موزعات الكريمة الباردة",
+    cat_accessories: "إكسسوارات",
+    cat_coffee_beans_desc: "حبوب قهوة كاملة للطحن الطازج — متوفرة بتشكيلة من الخلطات ودرجات التحميص.",
+    cat_ground_coffee_desc: "قهوة مطحونة وجاهزة للتحضير — مثالية للقهوة التركية، الموكا، التقطير، والفرنش بريس.",
+    cat_coffee_capsules_desc: "كبسولات وأقراص فردية سريعة وعملية لإسبريسو متسق في كل مرة.",
+    cat_capsule_machines_desc: "آلات الكبسولات مصممة لسهولة الاستخدام ونتائج كريمية، للاستخدام المنزلي والمكتبي والمهني.",
+    cat_espresso_machines_desc: "آلات الإسبريسو مصممة للدقة والجودة، مناسبة للاستخدام المهني.",
+    cat_grinding_machines_desc: "آلات الطحن للحصول على قهوة مثالية، تضمن استخلاص نكهة مثلى.",
+    cat_cold_cream_dispenser_desc: "موزعات الكريمة الباردة لإنشاء مخفوق قهوة ناعم وكريمي.",
+    cat_accessories_desc: "إكسسوارات قهوة أساسية لتكمل تجربة تحضيرك وترتقي بها.",
 
     // Marquee
     marquee_1: "قهوة فاخرة",
@@ -317,51 +348,371 @@ const translations = {
   }
 };
 
+// Product filter categories (slug keys matching cat_* translations)
+const productCategories = ['coffee_beans', 'ground_coffee', 'coffee_capsules', 'capsule_machines', 'espresso_machines', 'grinding_machines', 'cold_cream_dispenser', 'accessories'];
+let activeCategory = 'coffee_beans';
+
 // Products data for each language
 const productsData = {
   en: [
     {
-      image: "./assets/grano.png",
-      name: "Espresso Coffee Beans",
-      description: "The ideal choice for anyone who wants to grind on-demand and obtain maximum freshness and aroma"
+      image: "./assets/04001Arabica-extra-1kg.png",
+      name: "Arabica Extra",
+      description: "A refined, aromatic espresso with a rich, velvety taste and elegant notes of fruit and cocoa",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/macchinetta.png",
-      name: "Espresso Machine",
-      description: "Compact and stylish espresso machine, easy to operate with consistent creamy results."
+      image: "./assets/04002-Selezione-oro-1kg.png",
+      name: "Selezione Oro",
+      description: "A balanced, harmonious coffee with floral aromas and hints of almond and biscuit",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/cialde.png",
-      name: "Capsules and Pods",
-      description: "Combine taste and convenience for quality espresso at home or in the office, ensure precise and consistent brewing."
+      image: "./assets/04003-Bar-extra-1kg.png",
+      name: "Bar Extra",
+      description: "A full-bodied, enveloping espresso with toasted notes reminiscent of dark chocolate and caramel",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/ground.png",
-      name: "Ground Coffee",
-      description: "Ready-to-brew ground coffee for a rich and smooth cup every time, perfect for drip, moka pot, French press or turkish coffee."
+      image: "./assets/04004-Silver-medal-1kg.png",
+      name: "Silver Medal",
+      description: "An intense, creamy coffee with a bold, lingering flavour and pleasant aromas of cocoa and hazelnut",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/29008-Intenso-1kg-NEW.png",
+      name: "Intenso",
+      description: "A strong, satisfying espresso with rich aromas recalling chocolate, biscuit and hazelnut",
+      category: "coffee_beans"
+    },
+
+    {
+      image: "./assets/29105-Espresso-point-gold.png",
+      name: "Gold",
+      description: "A balanced, enveloping espresso with a full, lingering flavour. Sweet notes and a dense body highlight the best of Italian tradition",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29106-Espresso-point-red.png",
+      name: "Red",
+      description: "A rich, intense espresso with a thick crema and persistent aroma, ideal for those who love coffee with authentic character",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29107-Espresso-point-deck.png",
+      name: "Deck",
+      description: "A decaffeinated espresso that surprises with its intensity and creaminess, preserving all the aromatic richness of true Italian espresso",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29108-Espresso-point-ginseng.png",
+      name: "Ginseng",
+      description: "A sweet, energising drink that combines the creaminess of coffee with the vitality of ginseng, for a break full of flavour and energy",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/40030-Arabica-Premium-250g.png",
+      name: "Arabica Premium",
+      description: "A smooth, well-balanced coffee with an elegant aroma and sweet notes of chocolate and toasted bread",
+      category: "ground_coffee"
+    },
+    {
+      image: "./assets/40031-Diamond-Cream-250g.png",
+      name: "Diamond Cream",
+      description: "A rich, intense blend with a full, enveloping body, spicy nuances and an almond finish",
+      category: "ground_coffee"
+    },
+    {
+      image: "./assets/40032-Decaffè-250g.png",
+      name: "Decaffè",
+      description: "A rich, creamy espresso that retains its full aroma even without caffeine",
+      category: "ground_coffee"
+    },
+
+    {
+      image: "./assets/macchinetta_red.png",
+      name: "Seaver",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/ROSSINI.png",
+      name: "Rossini",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/DREAM.png",
+      name: "Dream",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/ARMONIA.png",
+      name: "Armonia",
+      description: "",
+      category: "capsule_machines"
+    },
+
+    {
+      image: "./assets/appia_life_single.png",
+      name: "Appia Life Single",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/appia_life_double.png",
+      name: "Appia Life Double",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/appia_life_triple.png",
+      name: "Appia Life Triple",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_2GR.png",
+      name: "C5 Leva 2GR",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_3GR.png",
+      name: "C5 Leva 3GR",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_4GR.png",
+      name: "C5 Leva 4GR",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/D8.png",
+      name: "D8",
+      description: "",
+      category: "espresso_machines"
+    },
+
+    {
+      image: "./assets/grinding_primus.png",
+      name: "Primus",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_nexus.png",
+      name: "Nexus",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_ultra_E.png",
+      name: "Ultra E",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_ultra_AM.png",
+      name: "Ultra A/M",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/nina.png",
+      name: "Nina",
+      description: "",
+      category: "cold_cream_dispenser"
+    },
+    {
+      image: "./assets/tazzina_tulip.png",
+      name: "Tulip",
+      description: "",
+      category: "accessories"
     }
+
   ],
   ar: [
     {
-      image: "./assets/grano.png",
-      name: "حبوب قهوة إسبريسو",
-      description: "الخيار المثالي لمن يريد الطحن عند الطلب والحصول على أقصى درجات النضارة والرائحة"
+      image: "./assets/04001Arabica-extra-1kg.png",
+      name: "حبوب أرابيكا إكسترا",
+      description: "إسبريسو راقٍ وعطري مع مذاق غني وحريري ونكهات أنيقة من الفواكه والكاكاو",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/macchinetta.png",
-      name: "آلة إسبريسو",
-      description: "آلة إسبريسو أنيقة ومدمجة، سهلة الاستخدام مع نتائج كريمية متسقة."
+      image: "./assets/04002-Selezione-oro-1kg.png",
+      name: "حبوب سيليتسيوني أورو",
+      description: "قهوة متوازنة ومتناغمة مع روائح زهرية ولمحات من اللوز والبسكويت",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/cialde.png",
-      name: "كبسولات وأقراص",
-      description: "تجمع بين المذاق والراحة للحصول على إسبريسو عالي الجودة في المنزل أو المكتب، تضمن تخميراً دقيقاً ومتسقاً."
+      image: "./assets/04003-Bar-extra-1kg.png",
+      name: "حبوب بار إكسترا",
+      description: "إسبريسو غني ومغلف مع نكهات محمصة تذكر بالشوكولاتة الداكنة والكراميل",
+      category: "coffee_beans"
     },
     {
-      image: "./assets/ground.png",
-      name: "قهوة مطحونة",
-      description: "قهوة مطحونة جاهزة للتحضير لفنجان غني وناعم في كل مرة، مثالية للتقطير، الموكا، الفرنش بريس أو القهوة التركية."
+      image: "./assets/04004-Silver-medal-1kg.png",
+      name: "حبوب الميدالية الفضية",
+      description: "قهوة مكثفة وكريمية مع نكهة جريئة تدوم طويلاً وروائح لطيفة من الكاكاو والبندق",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/29008-Intenso-1kg-NEW.png",
+      name: "حبوب إنتنسو",
+      description: "إسبريسو قوي مع نكهات غنية تذكر بالشوكولاتة والبسكويت والبندق",
+      category: "coffee_beans"
+    },
+
+    {
+      image: "./assets/29105-Espresso-point-gold.png",
+      name: "ذهبي",
+      description: "إسبريسو متوازن ومغلف مع نكهة كاملة تدوم طويلاً. نكهات حلوة وجسم كثيف يبرز أفضل ما في التقاليد الإيطالية",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29106-Espresso-point-red.png",
+      name: "أحمر",
+      description: "إسبريسو غني ومكثف مع كريما سميكة ورائحة مستمرة، مثالي لعشاق القهوة ذات الطابع الأصيل",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29107-Espresso-point-deck.png",
+      name: "ديك (منزوعة الكافيين)",
+      description: "إسبريسو منزوعة الكافيين يفاجئ بشدته وكريمته، محافظًا على كل الغنى العطري لإسبريسو الإيطالي الحقيقي",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/29108-Espresso-point-ginseng.png",
+      name: "جينسنغ",
+      description: "مشروب حلو ومنعش يجمع بين كريمة القهوة وحيوية الجينسنغ، لأخذ استراحة مليئة بالنكهة والطاقة",
+      category: "coffee_capsules"
+    },
+    {
+      image: "./assets/40030-Arabica-Premium-250g.png",
+      name: "أرابيكا بريميوم",
+      description: "قهوة ناعمة ومتوازنة مع رائحة أنيقة ونكهات حلوة من الشوكولاتة والخبز المحمص",
+      category: "ground_coffee"
+    },
+    {
+      image: "./assets/40031-Diamond-Cream-250g.png",
+      name: "دايموند كريم",
+      description: "خليط غني ومكثف مع جسم كامل ومغلف، وفروق توابل ونهاية لوزية",
+      category: "ground_coffee"
+    },
+    {
+      image: "./assets/40032-Decaffè-250g.png",
+      name: "ديكاف (منزوعة الكافيين)",
+      description: "إسبريسو غني وكريمي يحتفظ بكامل نكهته حتى بدون كافيين",
+      category: "ground_coffee"
+    },
+    {
+      image: "./assets/macchinetta_red.png",
+      name: "سيڤر",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/ROSSINI.png",
+      name: "روسيني",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/DREAM.png",
+      name: "دريم",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/ARMONIA.png",
+      name: "أرمونيا",
+      description: "",
+      category: "capsule_machines"
+    },
+    {
+      image: "./assets/appia_life_single.png",
+      name: "أبيا لايف سينجل",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/appia_life_double.png",
+      name: "أبيا لايف دبل",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/appia_life_triple.png",
+      name: "أبيا لايف تريبل",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_2GR.png",
+      name: "سي فايف ليفا 2GR",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_3GR.png",
+      name: "سي فايف ليفا 3GR",
+      description: "",
+      category: "espresso_machines"
+    },
+    {
+      image: "./assets/C5LEVA_4GR.png",
+      name: "سي فايف ليفا 4GR",
+      description: "",
+      category: "espresso_machines"
+    },  
+    {
+      image: "./assets/D8.png",
+      name: "دي 8",
+      description: "",
+      category: "espresso_machines"
+    },
+
+    {
+      image: "./assets/grinding_primus.png",
+      name: "بريموس",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_nexus.png",
+      name: "نيكسوس",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_ultra_E.png",
+      name: "ألترا E",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/grinding_ultra_AM.png",
+      name: "ألترا A/M",
+      description: "",
+      category: "grinding_machines"
+    },
+    {
+      image: "./assets/nina.png",
+      name: "نينا",
+      description: "",
+      category: "cold_cream_dispenser"
+    },
+    {
+      image: "./assets/tazzina_tulip.png",
+      name: "توليب",
+      description: "",
+      category: "accessories"
     }
+
   ]
 };
 
@@ -395,8 +746,29 @@ function applyTranslations(lang) {
     }
   });
 
-  // Re-render products
+  // Re-render category tabs and products
+  renderCategoryTabs(lang);
   renderProducts(lang);
+}
+
+// Render category filter tabs
+function renderCategoryTabs(lang) {
+  const tabsContainer = document.getElementById('products-tabs');
+  if (!tabsContainer) return;
+
+  tabsContainer.innerHTML = productCategories.map(cat => `
+    <button class="cat-tab${activeCategory === cat ? ' cat-tab--active' : ''}" data-category="${cat}">
+      ${translations[lang]['cat_' + cat]}
+    </button>
+  `).join('');
+
+  tabsContainer.querySelectorAll('.cat-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.dataset.category;
+      renderCategoryTabs(currentLang);
+      renderProducts(currentLang);
+    });
+  });
 }
 
 // Render products for current language
@@ -404,23 +776,42 @@ function renderProducts(lang) {
   const grid = document.getElementById('products-grid');
   if (!grid) return;
 
-  const products = productsData[lang];
-  grid.innerHTML = products.map((product, index) => `
-    <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
-      <div class="product-card__image-wrap">
-        <img src="${product.image}" alt="${product.name}" class="product-card__image">
-      </div>
-      <div class="product-card__content">
-        <h3 class="product-card__name">${product.name}</h3>
-        <p class="product-card__desc">${product.description}</p>
-      </div>
-    </div>
-  `).join('');
+  // Update category description
+  const descEl = document.getElementById('products-cat-desc');
+  if (descEl) {
+    const descKey = 'cat_' + activeCategory + '_desc';
+    descEl.textContent = translations[lang][descKey] || '';
+  }
 
-  // Re-observe for animations
-  document.querySelectorAll('.product-card.animate-on-scroll').forEach(el => {
-    el.classList.add('visible');
-  });
+  const allProducts = productsData[lang];
+  const filtered = activeCategory === 'all'
+    ? allProducts
+    : allProducts.filter(p => p.category === activeCategory);
+
+  // Fade out
+  grid.classList.add('products-grid--fading');
+
+  setTimeout(() => {
+    grid.innerHTML = filtered.map((product, index) => `
+      <div class="product-card animate-on-scroll stagger-${(index % 6) + 1}">
+        <div class="product-card__image-wrap">
+          <img src="${product.image}" alt="${product.name}" class="product-card__image">
+        </div>
+        <div class="product-card__content">
+          <h3 class="product-card__name">${product.name}</h3>
+          <p class="product-card__desc">${product.description}</p>
+        </div>
+      </div>
+    `).join('');
+
+    // Re-observe for animations
+    document.querySelectorAll('.product-card.animate-on-scroll').forEach(el => {
+      el.classList.add('visible');
+    });
+
+    // Fade in
+    grid.classList.remove('products-grid--fading');
+  }, 250);
 }
 
 // Set language directly

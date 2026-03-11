@@ -704,6 +704,57 @@ input.check-toggle-round-flat:checked+label:after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  transition: opacity 0.25s ease;
+}
+
+.products-grid--fading {
+  opacity: 0;
+}
+
+/* Category filter tabs */
+.cat-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.cat-desc {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 48px;
+  transition: opacity 0.3s ease;
+}
+
+.cat-tab {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.cat-tab:hover {
+  background: rgba(15, 63, 37, 0.08);
+}
+
+.cat-tab--active {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(15, 63, 37, 0.3);
+}
+
+.cat-tab--active:hover {
+  background: var(--primary-light);
 }
 
 .product-card {
