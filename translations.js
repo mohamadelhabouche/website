@@ -87,9 +87,9 @@ const translations = {
     about_title: "About Caffettino",
     about_subtitle: "What drives us every day to bring you exceptional coffee.",
     about_who_title: "Who We Are",
-    about_who_desc: "Caffettino is a premium coffee company dedicated to delivering high-quality coffee products sourced from sustainable farms around the world. We believe coffee is not just a drink — it's a daily ritual that deserves care and attention.",
+    about_who_desc: "Caffettino is a company specialized in the world of coffee, offering a distinguished selection of premium coffee and high-quality products. We believe that coffee is not just a drink, but a daily experience that deserves care and attention, We also supply and sell coffee machines and provide support and service to ensure the best experience for our customers.",
     about_mission_title: "Our Mission",
-    about_mission_desc: "Our mission is to deliver exceptional coffee experiences to homes and businesses through premium Italian craftsmanship and uncompromising quality. We are committed to consistency, reliability, and excellence in every cup.",
+    about_mission_desc: "Our goal is to deliver high quality and reliable service that makes every coffee moment a special experience each day, We provide our customers with complete coffee solutions suitable for offices, companies, cafés, and homes, offering a wide range of modern coffee machines along with carefully selected coffee, whether whole beans or capsules.",
 
     // App
     app_label: "Coming Soon",
@@ -260,10 +260,10 @@ const translations = {
     about_title: "عن كافيتينو",
     about_subtitle: "ما يدفعنا كل يوم لتقديم قهوة استثنائية لك.",
     about_who_title: "من نحن",
-    about_who_desc: "كافيتينو شركة قهوة فاخرة ملتزمة بتقديم منتجات قهوة عالية الجودة. نؤمن بأن القهوة ليست مجرد مشروب — إنها عادة يومية تستحق العناية والاهتمام.",
+    about_who_desc: "كافيتينو شركة متخصصة في عالم القهوة، تقدم مجموعة مميزة من القهوة الفاخرة والمنتجات عالية الجودة. نحن نؤمن بأن القهوة ليست مجرد مشروب، بل تجربة يومية تستحق العناية والاهتمام. كما نقوم بتوريد وبيع آلات القهوة وتقديم الدعم والخدمة لضمان أفضل تجربة لعملائنا.",
     about_mission_title: "مهمتنا",
-    about_mission_desc: "مهمتنا تقديم تجارب قهوة استثنائية للمنازل والشركات من خلال الحرفية الإيطالية الفاخرة والجودة التي لا تقبل المساومة. نحن ملتزمون بالاتساق والموثوقية والتميز في كل فنجان.",
-
+    about_mission_desc: "هدفنا هو تقديم جودة عالية وخدمة موثوقة تجعل من لحظة القهوة تجربة مميزة في كل يوم. نقدم لعملائنا حلولاً متكاملة للقهوة تناسب المكاتب والشركات والمقاهي والمنازل، حيث نوفر مجموعة متنوعة من آلات القهوة الحديثة بالإضافة إلى القهوة المختارة بعناية، سواء كانت قهوة حبوب أو كبسولات.",
+    
     // App
     app_label: "قريبًا",
     app_title: "تطبيق كافيتينو",
