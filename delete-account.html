@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F3F25">
+  <meta name="description" content="Delete your Caffettino account and all associated data.">
+
+  <title>Delete Account – Caffettino</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/Logo_no_background.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Translations -->
+  <script src="./translations.js"></script>
+
+  <style>
+    .privacy-page {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      min-height: 100vh;
+      background: var(--bg);
+      position: relative;
+    }
+
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .privacy-header__logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    .privacy-header__title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--primary);
+      margin: 0 0 12px;
+    }
+
+    .privacy-content {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-sm);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .privacy-content p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin: 0 0 20px;
+    }
+
+    .privacy-content h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 40px 0 16px;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content ul {
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin: 0 0 20px;
+      padding-left: 24px;
+    }
+
+    body.rtl .privacy-content ul {
+      padding-left: 0;
+      padding-right: 24px;
+    }
+
+    .privacy-content li {
+      margin-bottom: 8px;
+    }
+
+    .delete-step {
+      background: var(--bg-alt, #f0f7f3);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 10px 0;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    body.rtl .delete-step {
+      border-left: none;
+      border-right: 4px solid var(--primary);
+    }
+
+    .delete-contact {
+      background: #fff8e1;
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-top: 16px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    body.rtl .delete-contact {
+      border-left: none;
+      border-right: 4px solid #f59e0b;
+    }
+
+    .delete-contact a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .privacy-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform var(--transition);
+    }
+
+    .privacy-back:hover {
+      transform: translateX(-4px);
+    }
+
+    body.rtl .privacy-back:hover {
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 768px) {
+      .privacy-content {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="nav-pill" aria-label="Primary navigation">
+          <a href="./index.html#products" class="nav-link" data-i18n="nav_products">Products</a>
+          <a href="./index.html#location" class="nav-link" data-i18n="nav_location">Location</a>
+
+          <a href="./index.html" class="nav-logo" aria-label="Home">
+            <img src="./assets/Logo_no_background.png" alt="Caffettino">
+          </a>
+
+          <a href="./index.html#about" class="nav-link" data-i18n="nav_about">About</a>
+          <a href="./index.html#app" class="nav-link" data-i18n="nav_app">App</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="privacy-page">
+    <div class="container">
+      <div class="privacy-header">
+        <h1 class="privacy-header__title" data-i18n="delete_title">Delete Your Account</h1>
+      </div>
+
+      <div class="privacy-content">
+        <p data-i18n="delete_intro">You can request the deletion of your Caffettino account and all associated data directly from within the app, or by contacting us.</p>
+
+        <h2 data-i18n="delete_opt1_title">Option 1 — Delete from the app</h2>
+        <div class="delete-step">1. <span data-i18n="delete_opt1_step1">Open the Caffettino app and sign in.</span></div>
+        <div class="delete-step">2. <span data-i18n="delete_opt1_step2">Go to the Profile tab.</span></div>
+        <div class="delete-step">3. <span data-i18n="delete_opt1_step3">Scroll to the bottom and tap "Delete Account".</span></div>
+        <div class="delete-step">4. <span data-i18n="delete_opt1_step4">Confirm the deletion when prompted.</span></div>
+
+        <h2 data-i18n="delete_opt2_title">Option 2 — Contact us</h2>
+        <p data-i18n="delete_opt2_intro">If you are unable to access the app, send an email to request account deletion:</p>
+        <div class="delete-contact">
+          📧 <a href="mailto:support@caffettino-group.it">support@caffettino-group.it</a><br>
+          <span data-i18n="delete_opt2_subject">Subject: Account Deletion Request</span><br>
+          <span data-i18n="delete_opt2_note">Include the email address or phone number associated with your account.</span>
+        </div>
+
+        <h2 data-i18n="delete_data_title">What data is deleted</h2>
+        <ul>
+          <li data-i18n="delete_data_1">Your profile information (name, email, phone number)</li>
+          <li data-i18n="delete_data_2">Your order history</li>
+          <li data-i18n="delete_data_3">Your device tokens and location data</li>
+          <li data-i18n="delete_data_4">Your account credentials</li>
+        </ul>
+
+        <h2 data-i18n="delete_retention_title">Retention period</h2>
+        <p data-i18n="delete_retention_text">All personal data is permanently deleted within 30 days of the request. Anonymised order records may be retained for accounting purposes as required by law.</p>
+
+        <a href="./index.html" class="privacy-back" data-i18n="delete_back">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="./assets/Logo_no_background.png" alt="Caffettino" class="footer__logo-img">
+          <span class="footer__name" data-i18n="footer_name">Caffettino</span>
+        </div>
+
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="./privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="mailto:support@caffettino-group.it" data-i18n="footer_contact">Contact</a>
+          <a href="https://wa.me/96181550954" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://instagram.com/caffettino_sarl" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/caffettino-s-a-r-l/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/18F9aSLtGz/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer__copy">© <span id="year"></span> <span data-i18n="footer_copy">Caffettino. All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    initLanguage();
+  </script>
+</body>
+
+</html>
