@@ -476,6 +476,24 @@ const productsData = {
       description: "A rich, creamy espresso that retains its full aroma even without caffeine",
       category: "ground_coffee"
     },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-crema-bar-1kg.png",
+      name: "Crema Bar",
+      description: "A creamy, full-bodied espresso with a velvety texture and a lingering, balanced flavour",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-decaffe-500g.png",
+      name: "Decaffè",
+      description: "A rich, creamy espresso that retains its full aroma even without caffeine",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-espresso-classico-1kg.png",
+      name: "Espresso Classico",
+      description: "A classic, well-rounded espresso with a rich aroma and a balanced flavour profile, perfect for those who appreciate the timeless taste of Italian coffee",
+      category: "coffee_beans"
+    },
 
     {
       image: "./assets/macchinetta_red.png",
@@ -612,6 +630,24 @@ const productsData = {
       image: "./assets/29008-Intenso-1kg-NEW.png",
       name: "حبوب إنتنسو",
       description: "إسبريسو قوي مع نكهات غنية تذكر بالشوكولاتة والبسكويت والبندق",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-crema-bar-1kg.png",
+      name: "حبوب كريما بار",
+      description: "إسبريسو غني مع نكهات متوازنة وكريما ناعمة",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-decaffe-500g.png",
+      name: "حبوب ديكاف (منزوعة الكافيين)",
+      description: "إسبريسو غني وكريمي يحتفظ بكامل نكهته حتى بدون كافيين",
+      category: "coffee_beans"
+    },
+    {
+      image: "./assets/caffe-vero-caffe-in-grani-espresso-classico-1kg.png",
+      name: "حبوب إسبريسو كلاسيكو",
+      description: "إسبريسو متوازن مع نكهات غنية وكريما ناعمة",
       category: "coffee_beans"
     },
 
